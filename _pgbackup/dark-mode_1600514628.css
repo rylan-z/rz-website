@@ -46,7 +46,6 @@
     transition: box-shadow 150ms;
     background-color: transparent;
     box-shadow: none;
-    backdrop-filter: blur(3px);
 }
 
 .btn-hollow:hover {
@@ -58,8 +57,8 @@
 .landing-hero {
     background-image: url('../assets/hero-img-white/earth-wh.svg');
     border-bottom: 1px solid var(--grey);
-    background-size: 95%;
-    background-position: 50% -10%;
+    background-size: 80%;
+    background-position: 50% -70%;
 }
 
 .landing-hero-gradient {
@@ -73,8 +72,7 @@
 }
 
 .footer-gradient {
-    background-image: url('none');
-    background-color: rgba(255, 255, 255, 0.9);
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8) 41.7582%, rgba(255, 255, 255, 0) 100%);
 }
 
 .hero-txt-animate-1 {
@@ -104,6 +102,7 @@
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: var(--dark-grey);
+    background-color: var(--dark-black);
 }
 
 .strat-discovery-txt {
@@ -113,22 +112,4 @@
 .border-hov-hold {
     height: 1px;
     background-color: rgba(0, 0, 0, 0.3);
-}
-
-.switch-txt:after {
-    color: var(--white);
-    content: 'Light';
-}
-
-.switch-txt-dark {
-    display: none;
-}
-
-.switch-icn {
-    display: none;
-}
-
-.switch-icn-light {
-    display: inline;
-    margin-bottom: 0;
 }

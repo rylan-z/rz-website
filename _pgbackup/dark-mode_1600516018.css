@@ -115,13 +115,9 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.switch-txt:after {
-    color: var(--white);
+.custom-control-label:after {
     content: 'Light';
-}
-
-.switch-txt-dark {
-    display: none;
+    color: var(--white);
 }
 
 .switch-icn {
@@ -130,5 +126,4 @@
 
 .switch-icn-light {
     display: inline;
-    margin-bottom: 0;
 }

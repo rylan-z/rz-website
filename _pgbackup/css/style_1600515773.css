@@ -297,7 +297,9 @@ h3 {
     font-size: 9.5em;
     font-weight: 600;
     line-height: 1.0em;
-}.footer {
+}
+
+.footer {
     min-height: 100vh;
     background-image: url('../assets/f-dk.jpg');
     background-position: right top;
@@ -745,11 +747,15 @@ input {
 }
 
 .custom-control-label {
+    font-size: 0.7em;
+    color: var(--grey);
     height: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: row-reverse;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .client-logo-grid-hold {
@@ -766,19 +772,5 @@ input {
 
 .switch-icn {
     margin-right: 5px;
-    width: 16px;
-    margin-bottom: 2px;
-}
-
-.switch-icn-light {
-    display: none;
-}
-
-.switch-txt {
-    font-size: 0.7em;
-    color: var(--grey);
-    font-weight: 600;
-}
-
-.switch-txt-dark {
+    width: 20px;
 }

@@ -121,7 +121,8 @@
 }
 
 .switch-txt-dark {
-    display: none;
+    color: var(--white);
+    content: 'Light';
 }
 
 .switch-icn {
@@ -130,5 +131,4 @@
 
 .switch-icn-light {
     display: inline;
-    margin-bottom: 0;
 }

@@ -117,11 +117,7 @@
 
 .switch-txt:after {
     color: var(--white);
-    content: 'Light';
-}
-
-.switch-txt-dark {
-    display: none;
+    content: 'LOL';
 }
 
 .switch-icn {
@@ -130,5 +126,4 @@
 
 .switch-icn-light {
     display: inline;
-    margin-bottom: 0;
 }

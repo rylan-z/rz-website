@@ -73,8 +73,7 @@
 }
 
 .footer-gradient {
-    background-image: url('none');
-    background-color: rgba(255, 255, 255, 0.9);
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8) 41.7582%, rgba(255, 255, 255, 0) 100%);
 }
 
 .hero-txt-animate-1 {
@@ -104,6 +103,7 @@
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: var(--dark-grey);
+    background-color: var(--dark-black);
 }
 
 .strat-discovery-txt {
@@ -113,22 +113,4 @@
 .border-hov-hold {
     height: 1px;
     background-color: rgba(0, 0, 0, 0.3);
-}
-
-.switch-txt:after {
-    color: var(--white);
-    content: 'Light';
-}
-
-.switch-txt-dark {
-    display: none;
-}
-
-.switch-icn {
-    display: none;
-}
-
-.switch-icn-light {
-    display: inline;
-    margin-bottom: 0;
 }

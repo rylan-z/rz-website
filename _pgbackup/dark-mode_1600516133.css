@@ -115,13 +115,13 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.switch-txt:after {
+.custom-control-label {
     color: var(--white);
-    content: 'Light';
 }
 
-.switch-txt-dark {
-    display: none;
+.switch-txt {
+    color: var(--white);
+    content: 'LOL';
 }
 
 .switch-icn {
@@ -130,5 +130,4 @@
 
 .switch-icn-light {
     display: inline;
-    margin-bottom: 0;
 }

@@ -297,7 +297,9 @@ h3 {
     font-size: 9.5em;
     font-weight: 600;
     line-height: 1.0em;
-}.footer {
+}
+
+.footer {
     min-height: 100vh;
     background-image: url('../assets/f-dk.jpg');
     background-position: right top;
@@ -766,8 +768,7 @@ input {
 
 .switch-icn {
     margin-right: 5px;
-    width: 16px;
-    margin-bottom: 2px;
+    width: 20px;
 }
 
 .switch-icn-light {

@@ -46,7 +46,6 @@
     transition: box-shadow 150ms;
     background-color: transparent;
     box-shadow: none;
-    backdrop-filter: blur(3px);
 }
 
 .btn-hollow:hover {
@@ -56,10 +55,11 @@
 }
 
 .landing-hero {
-    background-image: url('../assets/hero-img-white/earth-wh.svg');
+    background-image: url('../assets/hero-img-white/download.png');
     border-bottom: 1px solid var(--grey);
-    background-size: 95%;
-    background-position: 50% -10%;
+    background-size: 50%;
+    background-position: center bottom;
+    background-attachment: fixed;
 }
 
 .landing-hero-gradient {
@@ -69,16 +69,15 @@
 .footer {
     background-image: url('../assets/photography/map.svg');
     border-top: 1px solid var(--grey);
-    background-size: 55%;
+    background-size: 60%;
 }
 
 .footer-gradient {
-    background-image: url('none');
-    background-color: rgba(255, 255, 255, 0.9);
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 69.4505%);
 }
 
 .hero-txt-animate-1 {
-    background-color: #ff0000;
+    background-color: red;
     animation-name: example;
     animation-duration: 20s;
     animation-iteration-count: infinite;
@@ -88,11 +87,11 @@
 
 @keyframes example {
     from {
-        background-color: black;
+        background-color: red;
     }
 
     to {
-        background-color: blue;
+        background-color: yellow;
     }
 }
 
@@ -104,31 +103,9 @@
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: var(--dark-grey);
+    background-color: var(--dark-black);
 }
 
 .strat-discovery-txt {
     color: var(--black);
-}
-
-.border-hov-hold {
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.switch-txt:after {
-    color: var(--white);
-    content: 'Light';
-}
-
-.switch-txt-dark {
-    display: none;
-}
-
-.switch-icn {
-    display: none;
-}
-
-.switch-icn-light {
-    display: inline;
-    margin-bottom: 0;
 }
