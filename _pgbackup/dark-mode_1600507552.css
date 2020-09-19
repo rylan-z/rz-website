@@ -1,0 +1,50 @@
+:root {
+    --white: #000;
+    --grey: #888;
+    --black: #fff;
+    --dark-black: #fff;
+    background-color: #fff;
+}
+
+.nav {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    background-image: linear-gradient(105deg, rgb(52, 93, 226) 0%, rgb(11, 201, 255) 100%);
+    border: none;
+}
+
+.btn-hollow {
+    background-image: none;
+    border: 1px solid #000000;
+}
+
+.button:hover {
+    border: none;
+    color: var(--black);
+}
+
+.btn-hollow:hover {
+    border: 1px solid var(--white) !important;
+    color: var(--white);
+}
+
+.landing-hero-gradient {
+    background-image: none;
+}
+
+.footer-gradient {
+    background-image: -webkit-linear-gradient(top, #fff 0%, #fff 70%);
+}
+
+.footer {
+    background-image: url('../../assets/photography/2.jpg');
+    border-top: 1px solid;
+}
+
+.landing-hero {
+    background-image: none;
+    border-bottom: 1px solid;
+}
