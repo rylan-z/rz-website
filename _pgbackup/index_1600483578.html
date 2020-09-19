@@ -2,16 +2,16 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<script src="dark-mode-switch.min.js"></script>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<title>Rylan Ziesing</title>
 		<script src="scripts.js"></script>
 		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="dark-mode.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:700,600,500,400,300,200,800,900&display=swap">
 		<script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
-		<script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
-		<script src="dark-mode-switch.min.js"></script>
 	</head>
 	<body>
 		<div class="preload-hold" data-pg-ia='{"l":[{"trg":"load","t":".preload-video","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0.1,"d":0,"l":{"display":"inline"}},{"t":"set","p":0.1,"d":0,"l":{"media.play":"1s"}}]},{"t":"$.preload-hold","l":[{"t":"tween","p":0,"d":0.3,"l":{"backgroundColor":"#020417"}},{"t":"tween","p":3.2,"d":0.2,"l":{"opacity":"0"}},{"t":"set","p":3.35,"d":0,"l":{"display":"none"}}]},{"t":"$.preload-loading-hold","l":[{"t":"tween","p":0,"d":0.3,"l":{"opacity":"0"}}]}]}}]}'>
@@ -30,6 +30,12 @@
 				</div>
 				<div class="nav-right">
 					<a href="" class="button button-nav" target="./contact.html">Let&apos;s Chat</a>
+					<div class="nav-link">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="darkSwitch">
+							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+						</div>
+					</div>
 					<div class="custom-control">
 						<input type="checkbox" class="custom-control-input" id="darkSwitch">
 						<label class="custom-control-label" for="darkSwitch">Light

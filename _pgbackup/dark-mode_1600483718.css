@@ -17,11 +17,3 @@
 .footer-gradient {
     background-image: -webkit-linear-gradient(top, #fff 0%, rgba(0, 0, 0, 0.2) 70%);
 }
-
-.footer {
-    background-image: url('../../assets/photography/2.jpg');
-}
-
-.landing-hero {
-    background-image: url('../assets/hero-inv.png');
-}

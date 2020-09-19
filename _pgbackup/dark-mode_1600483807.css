@@ -11,14 +11,14 @@
 }
 
 .landing-hero-gradient {
-    background-image: none;
+	background-image: none;
 }
 
 .footer-gradient {
     background-image: -webkit-linear-gradient(top, #fff 0%, rgba(0, 0, 0, 0.2) 70%);
 }
 
-.footer {
+[data-theme="dark"] .footer {
     background-image: url('../../assets/photography/2.jpg');
 }
 
