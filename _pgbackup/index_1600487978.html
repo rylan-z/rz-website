@@ -8,21 +8,21 @@
 		<title>Rylan Ziesing</title>
 		<script src="scripts.js"></script>
 		<link href="css/style.css" rel="stylesheet">
-		<script src="dark-mode-switch.min.js"></script>
-		<link rel="stylesheet" href="dark-mode.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:700,600,500,400,300,200,800,900&display=swap">
 		<script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
+		<script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
+		<script src="dark-mode-switch.min.js"></script>
 	</head>
 	<body>
 		<div class="preload-hold" data-pg-ia='{"l":[{"trg":"load","t":".preload-video","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0.1,"d":0,"l":{"display":"inline"}},{"t":"set","p":0.1,"d":0,"l":{"media.play":"1s"}}]},{"t":"$.preload-hold","l":[{"t":"tween","p":0,"d":0.3,"l":{"backgroundColor":"#020417"}},{"t":"tween","p":3.2,"d":0.2,"l":{"opacity":"0"}},{"t":"set","p":3.35,"d":0,"l":{"display":"none"}}]},{"t":"$.preload-loading-hold","l":[{"t":"tween","p":0,"d":0.3,"l":{"opacity":"0"}}]}]}}]}'>
-			<video class="preload-video" src="../assets/anim-loading/stardust-1.2.mp4">Your browser doesn't support HTML5 video tag.</video>
+			<video class="preload-video" src="assets/anim-intro.mp4">Your browser doesn't support HTML5 video tag.</video>
 			<div class="preload-loading-hold">
 				<h2>loading...</h2>
 			</div>
 		</div>
 		<div class="nav">
 			<div class="m m-nav">
-				<a href="" class="logo-hold"><img src="../assets/logo-static/logo-r.svg" class="logo-icon"/><h1 class="logo-text">Rylan Ziesing</h1></a>
+				<a href="" class="logo-hold"><img src="assets/logo-r.svg" class="logo-icon"/><h1 class="logo-text">Rylan Ziesing</h1></a>
 				<div class="nav-middle">
 					<a href="" class="nav-link">About</a>
 					<a href="" class="nav-link">Work</a>
@@ -30,16 +30,16 @@
 				</div>
 				<div class="nav-right">
 					<a href="" class="button button-nav" target="./contact.html">Let&apos;s Chat</a>
-					<div class="nav-link">
-						<div class="custom-control custom-switch">
-							<input type="checkbox" class="custom-control-input" id="darkSwitch">
-							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-						</div>
+					<div class="custom-control">
+						<input type="checkbox" class="custom-control-input" id="darkSwitch">
+						<label class="custom-control-label" for="darkSwitch">Light
+							<div class="light-mode-btn"></div>
+						</label>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="landing-page-hero m">
+		<div class="m landing-hero">
 			<div class="m-centre m" style="z-index: 2;">
 				<h1 class="hero-title">Website development, design &amp; branding</h1>
 				<p class="hero-subtxt">From entrepreneurial ventures to established businesses, I provide a wide variety of tailor-made digital solutions worldwide.</p>
@@ -74,7 +74,7 @@
 			<h1 class="steps-h">Brands, websites &amp; everything in between.</h1>
 			<div class="services-cards-grid">
 				<div class="service-card">
-					<img src="../assets/icons/service-cards/branding.svg" class="service-icon">
+					<img src="assets/service-branding.svg" class="service-icon">
 					<h2 class="service-card-h">Branding</h2>
 					<h3 class="service-card-item">logos</h3>
 					<h3 class="service-card-item">advertising material</h3>
@@ -83,7 +83,7 @@
 					<h3 class="service-card-item">merchandise &amp; physical goods</h3>
 				</div>
 				<div class="service-card">
-					<img src="../assets/icons/service-cards/design.svg" class="service-icon">
+					<img src="assets/service-design.svg" class="service-icon">
 					<h2 class="service-card-h">Digital Design</h2>
 					<h3 class="service-card-item">interfaces</h3>
 					<h3 class="service-card-item">mobile friendly layouts</h3>
@@ -92,7 +92,7 @@
 					<h3 class="service-card-item">a/b testing</h3>
 				</div>
 				<div class="service-card">
-					<img src="../assets/icons/service-cards/development.svg" class="service-icon">
+					<img src="assets/service-development.svg" class="service-icon">
 					<h2 class="service-card-h">Web Development</h2>
 					<h3 class="service-card-item">e-commerce</h3>
 					<h3 class="service-card-item">security &amp; performance optimization</h3>
@@ -114,12 +114,12 @@
 					<div class="discovery-chat-txt-hold">
 						<p class="strat-discovery-txt">I&apos;m creating an e-commerce site for my new business. We will need to start from scratch. Requirements are branding, web design, development &amp; hosting. Can you help?</p>
 						<p class="strat-discovery-txt-name">Client</p>
-						<img src="../assets/client-testimonials/michael-chapman/michael-chapman-unedited.jpg" class="discovery-user-img">
+						<img src="assets/c-mug-michael.jpg" class="discovery-user-img">
 					</div>
 					<div class="discovery-chat-txt-hold" style="margin-top: 55px;">
 						<p class="strat-discovery-txt-name">Rylan Ziesing</p>
 						<p class="strat-discovery-txt">Absolutely! Can you tell me more about your business? Once I have a clear understanding of your vision &amp; the project specifcations, I&apos;ll develop an action plan we all agree on &amp; get right to work.</p>
-						<img src="../assets/client-testimonials/michael-chapman/michael-chapman-unedited.jpg" class="discovery-user-img">
+						<img src="assets/c-mug-michael.jpg" class="discovery-user-img">
 					</div>
 				</div>
 				<div class="vert">
@@ -197,7 +197,7 @@
 			<div class="testimonial-hold">
 				<p class="testimonial-h">&ldquo;Working with Rylan was the prototype of professionalism. He drove the initial conversations to the most important decisions and provided directions and helpful resources every step of the way through execution. He understands the modern language of simplicity, design, and essentialism better than anyone I&rsquo;ve ever worked with. We will send him much more work in the years ahead.&rdquo;</p>
 				<div class="hori">
-					<img src="../assets/client-testimonials/michael-chapman/michael-chapman-unedited.jpg" class="testimonial-mugshot">
+					<img src="assets/c-mug-michael.jpg" class="testimonial-mugshot">
 					<div>
 						<h3 class="testimonial-name">Michael Chapman</h3>
 						<p>Head of marketing at Tryten</p>
@@ -214,10 +214,10 @@
 									<div class="border-hov"></div>
 								</div></h1></a>
 					</div>
-					<img src="../assets/logo-static/logo-r.svg" class="footer-logo-icn logo-icon"/>
+					<img src="assets/logo-r.svg" class="footer-logo-icn logo-icon"/>
 				</div>
 				<div class="footer-email-hold">
-					<a href="" class="footer-email">hey@rylanziesing.com</a>
+					<a href="" class="footer-email">contact@rylan.work</a>
 					<div class="border-hov-hold" style="background-color: rgba(0, 0, 0, 0);">
 						<div class="border-hov"></div>
 					</div>
