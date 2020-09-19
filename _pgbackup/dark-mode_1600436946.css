@@ -1,0 +1,11 @@
+[data-theme="dark"] .nav {
+    background-color: #fff !important;
+}
+
+[data-theme="dark"] {
+    --white: #000;
+    --grey: #333;
+    --black: #fff;
+    --dark-black: #e7e7e7;
+    background-color: #fff !important;
+}

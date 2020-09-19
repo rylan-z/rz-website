@@ -1,0 +1,15 @@
+[data-theme="dark"] .body {
+    background-color: #fff !important;
+}
+
+[data-theme="dark"] .bg-light {
+    background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+    background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+    background-color: #eee !important;
+}
