@@ -79,7 +79,7 @@ p {
 
 .landing-hero {
     max-width: none;
-    background-image: url('../../assets/photography/hero.png');
+    background-image: url('../assets/hero-dk.png');
     align-items: center;
     justify-content: center;
     padding-top: 0;
@@ -298,7 +298,7 @@ h3 {
 
 .footer {
     min-height: 100vh;
-    background-image: url('../../assets/photography/2.jpg');
+    background-image: url('../assets/f-dk.jpg');
     background-position: right top;
     position: relative;
     width: 100%;
