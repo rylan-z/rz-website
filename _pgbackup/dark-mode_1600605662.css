@@ -19,34 +19,19 @@
 }
 
 .button {
-    background: linear-gradient(90deg, var(--gr6) 0%, var(--gr5) 20%, var(--gr3) 40%, var(--gr4) 60%, var(--gr1) 80%, var(--gr2) 100%);
-    background-size: 400% 400%;
-    animation: btn-anim 25s ease infinite;
-    border: 1px solid #ffffff;
-}
-
-@keyframes btn-anim {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+    border: 1px solid #0e3eae;
+    background-color: #345de2;
 }
 
 .button:hover {
     color: var(--black);
+    background-color: #2f5ef9;
+    border-color: #061331;
 }
 
 .button-nav {
     border-color: var(--white);
     background-color: var(--black);
-    background-image: none;
     color: var(--white);
     box-shadow: none;
 }
@@ -58,10 +43,10 @@
 .btn-hollow {
     background-image: none;
     border: 1px solid var(--dark-grey);
-    transition: box-shadow 150ms   , border 150ms;
+    transition: box-shadow 150ms;
     background-color: transparent;
     box-shadow: none;
-    backdrop-filter: saturate(150%) blur(3px);
+    backdrop-filter: blur(3px);
 }
 
 .btn-hollow:hover {

@@ -106,7 +106,7 @@ p {
     align-items: center;
     backdrop-filter: saturate(250%) blur(30px);
     z-index: 100;
-    display: flex;
+    display: none;
 }
 
 .preload-video {
@@ -223,7 +223,7 @@ a {
     transition: border 150ms;
     border: 1px solid rgba(255, 255, 255, 0.6);
     color: var(--white);
-    backdrop-filter: saturate(125%) blur(6px);
+    backdrop-filter: saturate(150%) blur(3px);
 }
 
 .btn-hollow:hover {

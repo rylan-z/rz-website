@@ -41,6 +41,8 @@
 
 .button:hover {
     color: var(--black);
+    background-color: #2f5ef9;
+    border-color: #061331;
 }
 
 .button-nav {
@@ -58,7 +60,7 @@
 .btn-hollow {
     background-image: none;
     border: 1px solid var(--dark-grey);
-    transition: box-shadow 150ms   , border 150ms;
+    transition: box-shadow 150ms;
     background-color: transparent;
     box-shadow: none;
     backdrop-filter: saturate(150%) blur(3px);

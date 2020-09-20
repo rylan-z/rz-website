@@ -19,10 +19,10 @@
 }
 
 .button {
-    background: linear-gradient(90deg, var(--gr6) 0%, var(--gr5) 20%, var(--gr3) 40%, var(--gr4) 60%, var(--gr1) 80%, var(--gr2) 100%);
-    background-size: 400% 400%;
-    animation: btn-anim 25s ease infinite;
-    border: 1px solid #ffffff;
+    border: 1px solid #0e3eae;
+    background: linear-gradient(270deg, var(--gr1) 0%, var(--gr2) 25%, var(--gr3) 50%, var(--gr4) 75%), var(--gr5) 100%),;
+    background-size: 600% 600%;
+    animation: btn-anim 5s ease infinite;
 }
 
 @keyframes btn-anim {
@@ -41,6 +41,8 @@
 
 .button:hover {
     color: var(--black);
+    background-color: #2f5ef9;
+    border-color: #061331;
 }
 
 .button-nav {
@@ -58,10 +60,10 @@
 .btn-hollow {
     background-image: none;
     border: 1px solid var(--dark-grey);
-    transition: box-shadow 150ms   , border 150ms;
+    transition: box-shadow 150ms;
     background-color: transparent;
     box-shadow: none;
-    backdrop-filter: saturate(150%) blur(3px);
+    backdrop-filter: blur(3px);
 }
 
 .btn-hollow:hover {
