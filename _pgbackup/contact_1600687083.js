@@ -47,7 +47,7 @@
                 
                 if(response.result == "success") {
                     $('.contact1-form')[0].reset();
-                    alert('Thank you for reaching out.');
+                    alert('Thank you for contacting us.');
                     return true;
                 }
                 else {

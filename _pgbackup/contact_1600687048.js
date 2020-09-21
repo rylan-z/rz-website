@@ -6,7 +6,6 @@
     [ Validate ]*/
     var name = $('.validate-input input[name="name"]');
     var contact = $('.validate-input input[name="contact"]');
-	var subject = $('.validate-input input[name="subject"]');
     var message = $('.validate-input textarea[name="message"]');
 
 
@@ -20,11 +19,6 @@
 
         if($(contact).val().trim() == ''){
             showValidate(contact);
-            check=false;
-        }
-		
-		 if($(subject).val().trim() == ''){
-            showValidate(subject);
             check=false;
         }
 
@@ -47,7 +41,7 @@
                 
                 if(response.result == "success") {
                     $('.contact1-form')[0].reset();
-                    alert('Thank you for reaching out.');
+                    alert('Thank you for contacting us.');
                     return true;
                 }
                 else {
