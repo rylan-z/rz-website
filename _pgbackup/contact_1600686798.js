@@ -17,7 +17,7 @@
             check=false;
         }
 
-        if($(contact).val().trim() == ''){
+        if($(subject).val().trim() == ''){
             showValidate(contact);
             check=false;
         }
@@ -73,5 +73,7 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
+    
+    
 
 })(jQuery);

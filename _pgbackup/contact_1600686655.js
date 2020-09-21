@@ -5,7 +5,8 @@
     /*==================================================================
     [ Validate ]*/
     var name = $('.validate-input input[name="name"]');
-    var contact = $('.validate-input input[name="contact"]');
+    var email = $('.validate-input input[name="email"]');
+    var subject = $('.validate-input input[name="subject"]');
     var message = $('.validate-input textarea[name="message"]');
 
 
@@ -17,8 +18,14 @@
             check=false;
         }
 
-        if($(contact).val().trim() == ''){
-            showValidate(contact);
+        if($(subject).val().trim() == ''){
+            showValidate(subject);
+            check=false;
+        }
+
+
+        if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+            showValidate(email);
             check=false;
         }
 
@@ -26,7 +33,6 @@
             showValidate(message);
             check=false;
         }
-		
         if(!check)
             return false;
 
@@ -56,7 +62,7 @@
     });
 
 
-    $('.validate-form .form-input').each(function(){
+    $('.validate-form .input1').each(function(){
         $(this).focus(function(){
            hideValidate(this);
        });
@@ -73,5 +79,7 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
+    
+    
 
 })(jQuery);
