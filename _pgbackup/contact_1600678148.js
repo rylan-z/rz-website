@@ -20,6 +20,8 @@ document.addEventListener('input', function(event) {
 
 
 // contact submission
+
+
 (function ($) {
     "use strict";
 

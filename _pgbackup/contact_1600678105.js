@@ -20,6 +20,8 @@ document.addEventListener('input', function(event) {
 
 
 // contact submission
+
+
 (function ($) {
     "use strict";
 
@@ -28,7 +30,8 @@ document.addEventListener('input', function(event) {
     [ Validate ]*/
     var name = $('.validate-input input[name="name"]');
     var email = $('.validate-input input[name="email"]');
-    var message = $('.validate-input textarea[name="project-info"]');
+    var subject = $('.validate-input input[name="subject"]');
+    var message = $('.validate-input textarea[name="message"]');
 
 
     $('.validate-form').on('submit',function(e){
@@ -63,12 +66,12 @@ document.addEventListener('input', function(event) {
             url: "https://script.google.com/macros/s/AKfycbxiGnF1T_rPyL8Q1OMWJwWupMd071ZclOpu21KBtyyMLXp_uN4/exec",
             method: "POST",
             dataType: "json",
-            data: $(".contact-form").serialize(),
+            data: $(".contact1-form").serialize(),
             success: function(response) {
                 
                 if(response.result == "success") {
-                    $('.contact-form')[0].reset();
-                    alert('Thank you for contacting me.');
+                    $('.contact1-form')[0].reset();
+                    alert('Thank you for contacting us.');
                     return true;
                 }
                 else {

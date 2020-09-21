@@ -20,6 +20,8 @@ document.addEventListener('input', function(event) {
 
 
 // contact submission
+
+
 (function ($) {
     "use strict";
 
@@ -28,7 +30,8 @@ document.addEventListener('input', function(event) {
     [ Validate ]*/
     var name = $('.validate-input input[name="name"]');
     var email = $('.validate-input input[name="email"]');
-    var message = $('.validate-input textarea[name="project-info"]');
+    var subject = $('.validate-input input[name="subject"]');
+    var message = $('.validate-input textarea[name="message"]');
 
 
     $('.validate-form').on('submit',function(e){
