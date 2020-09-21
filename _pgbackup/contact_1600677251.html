@@ -36,41 +36,12 @@
 		</div>
 		<div class="m">
 			<h1 class="contact-h">Hey! Let&apos;s talk about <span class="contact-h-span">growing your business.</span></h1>
-			<form method="post" name="contact">
-				<script>
-								$('.contact1-form').on('submit',function(e){
-					//optional validation code here
-
-					e.preventDefault();
-
-					$.ajax({
-						url: "https://script.google.com/macros/s/AKfycbxiGnF1T_rPyL8Q1OMWJwWupMd071ZclOpu21KBtyyMLXp_uN4/exec",
-						method: "POST",
-						dataType: "json",
-						data: $(".contact1-form").serialize(),
-						success: function(response) {
-
-							if(response.result == "success") {
-								$('.contact1-form')[0].reset();
-								alert('Thank you for contacting us.');
-								return true;
-							}
-							else {
-								alert("Something went wrong. Please try again.")
-							}
-						},
-						error: function() {
-
-							alert("Something went wrong. Please try again.")
-						}
-					})
-				});
-				</script>
+			<form>
 				<div class="form-hold">
 					<p class="form-title">I&apos;m interested in...</p>
 					<div class="interested-in-hold">
 						<label class="container">Branding
-							<input type="checkbox" name="branding">
+							<input type="checkbox" value="branding">
 							<span class="checkmark">Branding</span>
 						</label>
 						<label class="container">Design Prototype
@@ -107,8 +78,8 @@
 						</label>
 					</div>
 					<input class="form-input" name="name" placeholder="What's your name?" type="text" style="margin-top: 30px;" checked="checked"></input>
-					<input class="form-input" placeholder="Email, mobile number or carrier pigeon" type="email" checked="checked" name="contact-method"></input>
-					<textarea id="project-info" rows="1" class="form-input form-textarea" form="contact" placeholder="Tell me all about your project" textarea></textarea>
+					<input class="form-input" name="email" placeholder="Email, mobile number or carrier pigeon" type="email" checked="checked"></input>
+					<textarea id="project-info" rows="1" class="form-input form-textarea" placeholder="Tell me all about your project" textarea></textarea>
 					<button class="button button-contact">Discuss My Project!</button>
 				</div>
 			</form>
