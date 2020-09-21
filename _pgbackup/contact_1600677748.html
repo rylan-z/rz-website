@@ -37,6 +37,35 @@
 		<div class="m">
 			<h1 class="contact-h">Hey! Let&apos;s talk about <span class="contact-h-span">growing your business.</span></h1>
 			<form name="contact-form">
+				<script>
+					$('.contact-form').on('submit',function(e){
+					//optional validation code here
+
+					e.preventDefault();
+
+					$.ajax({
+						url: "https://script.google.com/macros/s/AKfycbxiGnF1T_rPyL8Q1OMWJwWupMd071ZclOpu21KBtyyMLXp_uN4/exec",
+						method: "POST",
+						dataType: "json",
+						data: $(".contact-form").serialize(),
+						success: function(response) {
+
+							if(response.result == "success") {
+								$('.contact-form')[0].reset();
+								alert('Thank you for contacting us.');
+								return true;
+							}
+							else {
+								alert("Something went wrong. Please try again.")
+							}
+						},
+						error: function() {
+
+							alert("Something went wrong. Please try again.")
+						}
+					})
+				});
+				</script>
 				<div class="form-hold">
 					<p class="form-title">I&apos;m interested in...</p>
 					<div class="interested-in-hold">
