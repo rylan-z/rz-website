@@ -28,7 +28,7 @@ document.addEventListener('input', function(event) {
     [ Validate ]*/
     var name = $('.validate-input input[name="name"]');
     var email = $('.validate-input input[name="email"]');
-    var project_info = $('.validate-input textarea[name="project-info"]');
+    var message = $('.validate-input textarea[name="project-info"]');
 
 
     $('.validate-form').on('submit',function(e){
@@ -39,13 +39,19 @@ document.addEventListener('input', function(event) {
             check=false;
         }
 
+        if($(subject).val().trim() == ''){
+            showValidate(subject);
+            check=false;
+        }
+
+
         if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
             showValidate(email);
             check=false;
         }
 
-        if($(project_info).val().trim() == ''){
-            showValidate(project_info);
+        if($(message).val().trim() == ''){
+            showValidate(message);
             check=false;
         }
         if(!check)
@@ -77,7 +83,7 @@ document.addEventListener('input', function(event) {
     });
 
 
-    $('.validate-form .form-input').each(function(){
+    $('.validate-form .input1').each(function(){
         $(this).focus(function(){
            hideValidate(this);
        });
@@ -94,5 +100,7 @@ document.addEventListener('input', function(event) {
 
         $(thisAlert).removeClass('alert-validate');
     }
+    
+    
 
 })(jQuery);

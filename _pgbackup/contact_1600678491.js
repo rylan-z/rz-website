@@ -94,5 +94,7 @@ document.addEventListener('input', function(event) {
 
         $(thisAlert).removeClass('alert-validate');
     }
+    
+    
 
 })(jQuery);
