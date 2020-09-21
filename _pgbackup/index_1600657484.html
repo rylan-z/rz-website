@@ -7,13 +7,12 @@
 		<meta name="author" content="">
 		<title>Rylan Ziesing</title>
 		<script src="scripts.js"></script>
-		<link href="css/style.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:700,600,500,400,300,200,800,900&display=swap">
 		<script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
 		<script src="dark-mode-switch.min.js"></script>
 		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-		<link rel="stylesheet" href="dark-mode.css">
 	</head>
 	<body>
 		<div class="preload-hold" data-pg-ia='{"l":[{"trg":"load","t":".preload-video","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0.1,"d":0,"l":{"display":"inline"}},{"t":"set","p":0.1,"d":0,"l":{"media.play":"1s"}}]},{"t":"$.preload-hold","l":[{"t":"tween","p":0,"d":0.3,"l":{"backgroundColor":"#020417"}},{"t":"tween","p":3.2,"d":0.2,"l":{"opacity":"0"}},{"t":"set","p":3.35,"d":0,"l":{"display":"none"}}]},{"t":"$.preload-loading-hold","l":[{"t":"tween","p":0,"d":0.3,"l":{"opacity":"0"}}]}]}}]}'>
@@ -34,8 +33,10 @@
 					<a href="" class="button button-nav" target="./contact.html">Let&apos;s Chat</a>
 					<div class="custom-control">
 						<input type="checkbox" class="custom-control-input" id="darkSwitch">
-						<label class="custom-control-label" for="darkSwitch">Light
-							<div class="light-mode-btn"></div>
+						<label class="custom-control-label" for="darkSwitch"> 
+							<img src="assets/switch-dark.svg" class="switch-icn">
+							<img src="assets/switch-light.svg" class="switch-icn switch-icn-light">
+							<p class="switch-txt"><span class="switch-txt-dark">Dark</span></p>
 						</label>
 					</div>
 				</div>
@@ -44,7 +45,7 @@
 		<div class="m landing-hero">
 			<div class="landing-hero-gradient"></div>
 			<div class="m-centre m" style="z-index: 2;">
-				<h1 class="hero-title">Website <span class="hero-txt-animate-1">development</span>, <span>design</span> &amp; <span>branding</span></h1>
+				<h1 class="hero-title">Website development, design & branding</h1>
 				<p class="hero-subtxt">From entrepreneurial ventures to established businesses, I provide a wide variety of tailor-made digital solutions worldwide.</p>
 				<div class="hori">
 					<a href="" class="button">What&apos;s Your Project?</a>
@@ -103,11 +104,11 @@
 					<h3 class="service-card-item">search engine optimisation</h3>
 				</div>
 			</div>
-			<div class="progress-line" style="background-image: linear-gradient(0deg, #e2347f 35%, #000000 100%);"></div>
-			<div class="circle-label" style="background-image: linear-gradient(105deg, #8620bd 0%, #ff0053 100%);">
+			<div class="progress-line" style="background-image: linear-gradient(0deg, #e2347f 35%, var(--black) 100%);"></div>
+			<div class="circle-label" style="background-image: linear-gradient(105deg, var(--gr3) 0%, var(--gr4) 100%);">
 				<h2 class="circle-label-h">2</h2>
 			</div>
-			<h2 style="background-image: linear-gradient(105deg, #8620bd 0%, #ff0053 100%);" class="steps-title">Strategy</h2>
+			<h2 style="background-image: linear-gradient(105deg, var(--gr3) 0%, var(--gr4) 100%);" class="steps-title">Strategy</h2>
 			<h1 class="steps-h">I obsess over creating the best solutions possible.</h1>
 			<p class="steps-subh">From small one-off projects to full time multi month endeavors, I&apos;m with my clients every step of the journey &mdash; no matter the time required or overall complexity.</p>
 			<div class="progress-line" style="background-image: linear-gradient(0deg, var(--dark-grey) 50%, var(--black) 100%);"></div>
@@ -116,12 +117,12 @@
 					<div class="discovery-chat-txt-hold">
 						<p class="strat-discovery-txt">I&apos;m creating an e-commerce site for my new business. We will need to start from scratch. Requirements are branding, web design, development &amp; hosting. Can you help?</p>
 						<p class="strat-discovery-txt-name">Client</p>
-						<img src="assets/c-mug-michael.jpg" class="discovery-user-img">
+						<img src="assets/c-mug-michael-c.jpg" class="discovery-user-img">
 					</div>
 					<div class="discovery-chat-txt-hold" style="margin-top: 55px;">
 						<p class="strat-discovery-txt-name">Rylan Ziesing</p>
 						<p class="strat-discovery-txt">Absolutely! Can you tell me more about your business? Once I have a clear understanding of your vision &amp; the project specifcations, I&apos;ll develop an action plan we all agree on &amp; get right to work.</p>
-						<img src="assets/c-mug-michael.jpg" class="discovery-user-img">
+						<img src="assets/c-mug-michael-c.jpg" class="discovery-user-img">
 					</div>
 				</div>
 				<div class="vert">
@@ -168,10 +169,10 @@
 					<p class="strategy-steps-p">We now have a shared, agreed upon vision &amp; direction moving forward. With this in mind, effective changes are made, rapidly propelling us towards your finished product.</p>
 				</div>
 			</div>
-			<div class="circle-label" style="background-image: linear-gradient(105deg, #214ddb 0%, #0bc9ff 100%);">
+			<div class="circle-label" style="background-image: linear-gradient(105deg, var(--gr5) 0%, var(--gr6) 100%);">
 				<h2 class="circle-label-h">3</h2>
 			</div>
-			<h2 style="background-image: linear-gradient(105deg, rgb(52, 93, 226) 0%, rgb(11, 201, 255) 100%);" class="steps-title">Conclusion</h2>
+			<h2 style="background-image: linear-gradient(105deg, var(--gr5) 0%, var(--gr6) 100%);" class="steps-title">Conclusion</h2>
 			<h1 class="steps-h" style="margin-bottom: 0;">I work tirelessly until your vision is realised.</h1>
 		</div>
 		<div class="client-logo-grid-hold m m-centre">
@@ -203,7 +204,7 @@
 			<div class="testimonial-hold">
 				<p class="testimonial-h">&ldquo;Working with Rylan was the prototype of professionalism. He drove the initial conversations to the most important decisions and provided directions and helpful resources every step of the way through execution. He understands the modern language of simplicity, design, and essentialism better than anyone I&rsquo;ve ever worked with. We will send him much more work in the years ahead.&rdquo;</p>
 				<div class="hori">
-					<img src="assets/c-mug-michael.jpg" class="testimonial-mugshot">
+					<img src="assets/c-mug-michael-c.jpg" class="testimonial-mugshot">
 					<div>
 						<h3 class="testimonial-name">Michael Chapman</h3>
 						<p>Head of marketing at Tryten</p>
