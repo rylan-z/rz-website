@@ -74,7 +74,7 @@ h2 {
     margin-bottom: 0;
     font-size: 1.5em;
     font-weight: 500;
-    color: var(--white);
+    color: efefef;
 }
 
 p {
@@ -793,8 +793,4 @@ input {
 }
 
 .switch-txt-dark {
-}
-
-.loading {
-    color: #efefef;
 }
