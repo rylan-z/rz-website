@@ -806,21 +806,43 @@ input {
     width: 100%;
 }
 
+.alert-validate {
+    font-size: 1em;
+    color: #ffffff;
+}
+
 .validate-input {
     margin-top: 50px;
     position: relative;
 }
 
 .alert-validate::before {
-    display: none;
+    content: attr(data-validate);
+    position: absolute;
+    background-color: white;
+    pointer-events: none;
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s;
 }
 
 .alert-validate::after {
     content: "*";
     display: block;
     position: absolute;
-    color: red;
-    font-size: 1.6em;
-    top: 0;
+    visibility: visible;
+    opacity: 1;
+    color: #c80000;
+    font-size: 15px;
+    top: 50%;
     right: 0;
+}
+
+.alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
 }

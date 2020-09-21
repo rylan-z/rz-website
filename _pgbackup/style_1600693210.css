@@ -821,6 +821,7 @@ input {
     position: absolute;
     color: red;
     font-size: 1.6em;
+    font-weight: 500;
     top: 0;
     right: 0;
 }

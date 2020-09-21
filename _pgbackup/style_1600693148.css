@@ -813,12 +813,14 @@ input {
 
 .alert-validate::before {
     display: none;
+    transition: opacity 0.4s;
 }
 
 .alert-validate::after {
     content: "*";
     display: block;
     position: absolute;
+    opacity: 1;
     color: red;
     font-size: 1.6em;
     top: 0;

@@ -819,6 +819,7 @@ input {
     content: "*";
     display: block;
     position: absolute;
+    opacity: 1;
     color: red;
     font-size: 1.6em;
     top: 0;

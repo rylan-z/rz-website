@@ -806,21 +806,5 @@ input {
     width: 100%;
 }
 
-.validate-input {
-    margin-top: 50px;
-    position: relative;
-}
-
-.alert-validate::before {
-    display: none;
-}
-
-.alert-validate::after {
-    content: "*";
-    display: block;
-    position: absolute;
-    color: red;
-    font-size: 1.6em;
-    top: 0;
-    right: 0;
+.alert-validate {
 }

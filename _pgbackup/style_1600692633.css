@@ -806,21 +806,50 @@ input {
     width: 100%;
 }
 
+.alert-validate {
+    font-size: 1em;
+    color: #ffffff;
+}
+
 .validate-input {
     margin-top: 50px;
     position: relative;
 }
 
 .alert-validate::before {
-    display: none;
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: white;
+    top: 50%;
+    right: 8px;
+    pointer-events: none;
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s;
 }
 
 .alert-validate::after {
     content: "*";
+    font-family: FontAwesome;
     display: block;
     position: absolute;
-    color: red;
-    font-size: 1.6em;
-    top: 0;
-    right: 0;
+    color: #c80000;
+    font-size: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 13px;
+}
+
+.alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
 }
