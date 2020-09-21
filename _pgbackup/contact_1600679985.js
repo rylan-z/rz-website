@@ -28,8 +28,7 @@ document.addEventListener('input', function(event) {
     [ Validate ]*/
     var name = $('.validate-input input[name="name"]');
     var email = $('.validate-input input[name="email"]');
-    var subject = $('.validate-input input[name="subject"]');
-    var message = $('.validate-input textarea[name="message"]');
+    var project_info = $('.validate-input textarea[name="project-info"]');
 
 
     $('.validate-form').on('submit',function(e){
@@ -40,19 +39,13 @@ document.addEventListener('input', function(event) {
             check=false;
         }
 
-        if($(subject).val().trim() == ''){
-            showValidate(subject);
-            check=false;
-        }
-
-
         if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
             showValidate(email);
             check=false;
         }
 
-        if($(message).val().trim() == ''){
-            showValidate(message);
+        if($(project_info).val().trim() == ''){
+            showValidate(project_info);
             check=false;
         }
         if(!check)
@@ -61,15 +54,15 @@ document.addEventListener('input', function(event) {
         e.preventDefault();
       
         $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbxuSCQS7maeU-2N3E7T0fgqGlby5bGOEmLSvmh2/exec",
+            url: "https://script.google.com/macros/s/AKfycbxiGnF1T_rPyL8Q1OMWJwWupMd071ZclOpu21KBtyyMLXp_uN4/exec",
             method: "POST",
             dataType: "json",
-            data: $(".contact1-form").serialize(),
+            data: $(".contact-form").serialize(),
             success: function(response) {
                 
                 if(response.result == "success") {
-                    $('.contact1-form')[0].reset();
-                    alert('Thank you for contacting us.');
+                    $('.contact-form')[0].reset();
+                    alert('Thank you for contacting me.');
                     return true;
                 }
                 else {
@@ -84,7 +77,7 @@ document.addEventListener('input', function(event) {
     });
 
 
-    $('.validate-form .input1').each(function(){
+    $('.validate-form .form-input').each(function(){
         $(this).focus(function(){
            hideValidate(this);
        });
@@ -101,7 +94,5 @@ document.addEventListener('input', function(event) {
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
-    
 
 })(jQuery);
