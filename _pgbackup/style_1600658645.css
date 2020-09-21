@@ -679,7 +679,7 @@ h3 {
 
 .container input:checked ~ .checkmark {
     background-color: var(--white);
-    color: var(--black);
+    color: #000;
     border-color: var(--white);
 }
 
