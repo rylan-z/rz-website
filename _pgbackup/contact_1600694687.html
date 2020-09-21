@@ -36,52 +36,53 @@
 		</div>
 		<div class="m">
 			<h1 class="contact-h">Hey! Let&apos;s talk about <span class="contact-h-span">growing your business.</span></h1>
-			<form>
-				<div class="form-hold">
-					<p class="form-title">I&apos;m interested in...</p>
-					<div class="interested-in-hold">
-						<label class="container">Branding
-							<input type="checkbox">
-							<span class="checkmark">Branding</span>
-						</label>
-						<label class="container">Design Prototype
-							<input type="checkbox">
-							<span class="checkmark">Design Prototype</span>
-						</label>
-						<label class="container">Site From Scratch
-							<input type="checkbox">
-							<span class="checkmark">Site From Scratch</span>
-						</label>
-						<label class="container">Web Design
-							<input type="checkbox">
-							<span class="checkmark">Web Design</span>
-						</label>
-						<label class="container">Web Development
-							<input type="checkbox">
-							<span class="checkmark">Web Development</span>
-						</label>
-						<label class="container">Web Optimization
-							<input type="checkbox">
-							<span class="checkmark">Web Optimization</span>
-						</label>
-						<label class="container">Illustrations
-							<input type="checkbox">
-							<span class="checkmark">Illustrations</span>
-						</label>
-						<label class="container">App Design
-							<input type="checkbox">
-							<span class="checkmark">App Design</span>
-						</label>
-						<label class="container">Something Else
-							<input type="checkbox">
-							<span class="checkmark">Something Else</span>
-						</label>
-					</div>
-					<input class="form-input" name="name" placeholder="What's your name?" type="text" style="margin-top: 30px;" checked="checked"></input>
-					<input class="form-input" name="email" placeholder="Email, mobile number or carrier pigeon" type="email" checked="checked"></input>
-					<textarea id="project-info" rows="1" class="form-input form-textarea" placeholder="Tell me all about your project" textarea></textarea>
-					<button class="button button-contact">Discuss My Project!</button>
-				</div>
+			<form class="contact1-form validate-form"> 
+				<div class="interested-in-hold">
+					<label class="container">Branding
+						<input type="checkbox" name="branding">
+						<span class="checkmark">Branding</span>
+					</label>
+					<label class="container">Design Prototype
+						<input type="checkbox" name="design-prototype">
+						<span class="checkmark">Design Prototype</span>
+					</label>
+					<label class="container">Site From Scratch
+						<input type="checkbox" name="site-from-scratch">
+						<span class="checkmark">Site From Scratch</span>
+					</label>
+					<label class="container">Web Design
+						<input type="checkbox" name="web-design">
+						<span class="checkmark">Web Design</span>
+					</label>
+					<label class="container">Web Development
+						<input type="checkbox" name="web-development">
+						<span class="checkmark">Web Development</span>
+					</label>
+					<label class="container">Web Optimization
+						<input type="checkbox" name="web-optimization">
+						<span class="checkmark">Web Optimization</span>
+					</label>
+					<label class="container">Illustrations
+						<input type="checkbox" name="illustrations">
+						<span class="checkmark">Illustrations</span>
+					</label>
+					<label class="container">App Design
+						<input type="checkbox" name="app-design">
+						<span class="checkmark">App Design</span>
+					</label>
+					<label class="container">Something Else
+						<input type="checkbox" name="something-else">
+						<span class="checkmark">Something Else</span>
+					</label>
+				</div>				 
+				<div class="validate-input"> 
+					<input type="text" name="name" placeholder="What's your name?" class="form-input"> 
+				</div>				 
+				<div class="validate-input"> 
+					<input type="text" name="contact" placeholder="Email, mobile number or carrier pigeon" class="form-input"> 
+				</div>				 
+				<textarea rows="1" class="form-input form-textarea" name="message" placeholder="Tell me all about your project"></textarea>
+				<button class="button button-contact" type="submit">Discuss My Project!</button>				 				 				 
 			</form>
 		</div>
 		<div class="footer">
@@ -97,7 +98,7 @@
 					<img src="assets/logo-r.svg" class="footer-logo-icn logo-icon"/>
 				</div>
 				<div class="footer-email-hold">
-					<a href="mailto:contact@rylan.work" class="footer-email">contact@rylan.work</a>
+					<a class="footer-email" href="mailto:contact@rylan.work">contact@rylan.work</a>
 					<div class="border-hov-hold" style="background-color: rgba(0, 0, 0, 0);">
 						<div class="border-hov"></div>
 					</div>
@@ -109,6 +110,8 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="expanding.js"></script>
 		<script type="text/javascript" src="contact.js"></script>
 	</body>
 </html>
