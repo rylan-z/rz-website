@@ -34,7 +34,7 @@
                 
                 if(response.result == "success") {
                     $('.contact1-form')[0].reset();
-                    alert('Thank you for reaching out - I will respond shortly.');
+                    alert('Thank you for reaching out, I willl respond shortly.');
                     return true;
                 }
                 else {
