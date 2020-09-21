@@ -5,8 +5,8 @@
     /*==================================================================
     [ Validate ]*/
     var name = $('.validate-input input[name="name"]');
-    var email = $('.validate-input input[name="email"]');
-    var subject = $('.validate-input input[name="subject"]');
+    var contact = $('.validate-input input[name="contact"]');
+	var subject = $('.validate-input input[name="subject"]');
     var message = $('.validate-input textarea[name="message"]');
 
 
@@ -18,14 +18,13 @@
             check=false;
         }
 
-        if($(subject).val().trim() == ''){
-            showValidate(subject);
+        if($(contact).val().trim() == ''){
+            showValidate(contact);
             check=false;
         }
-
-
-        if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-            showValidate(email);
+		
+		 if($(subject).val().trim() == ''){
+            showValidate(subject);
             check=false;
         }
 
@@ -33,13 +32,14 @@
             showValidate(message);
             check=false;
         }
+		
         if(!check)
             return false;
 
         e.preventDefault();
       
         $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbxuSCQS7maeU-2N3E7T0fgqGlby5bGOEmLSvmh2/exec",
+            url: "https://script.google.com/macros/s/AKfycbxiGnF1T_rPyL8Q1OMWJwWupMd071ZclOpu21KBtyyMLXp_uN4/exec",
             method: "POST",
             dataType: "json",
             data: $(".contact1-form").serialize(),
@@ -47,7 +47,7 @@
                 
                 if(response.result == "success") {
                     $('.contact1-form')[0].reset();
-                    alert('Thank you for contacting us.');
+                    alert('Thank you for reaching out.');
                     return true;
                 }
                 else {
@@ -62,7 +62,7 @@
     });
 
 
-    $('.validate-form .input1').each(function(){
+    $('.validate-form .form-input').each(function(){
         $(this).focus(function(){
            hideValidate(this);
        });
@@ -79,7 +79,5 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
-    
 
 })(jQuery);
