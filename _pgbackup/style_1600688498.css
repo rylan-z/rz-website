@@ -720,7 +720,6 @@ h3 {
     position: relative;
     margin-top: 50px;
     transition: border 150ms;
-    overflow: hidden;
 }
 
 .form-input:focus {
