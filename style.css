@@ -85,7 +85,7 @@ p {
 }
 
 .landing-hero {
-    background-image: url('assets/hero-dk.png');
+    background-image: url('assets/hero-dk-c.jpg');
     align-items: center;
     justify-content: center;
     padding-top: 20px;
@@ -310,7 +310,7 @@ h3 {
 
 .footer {
     min-height: 100vh;
-    background-image: url('assets/f-dk.jpg');
+    background-image: url('assets/f-dk-c.jpg');
     background-position: right top;
     position: relative;
     width: 100%;
@@ -531,8 +531,8 @@ h3 {
 }
 
 .testimonial-mugshot {
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     border-radius: 100%;
     margin-right: 15px;
 }
