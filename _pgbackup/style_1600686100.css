@@ -152,7 +152,6 @@ h1 {
     border: 1px solid var(--white);
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    text-align: center;
 }
 
 .hero-subtxt {

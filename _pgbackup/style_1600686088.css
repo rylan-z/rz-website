@@ -152,7 +152,6 @@ h1 {
     border: 1px solid var(--white);
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    text-align: center;
 }
 
 .hero-subtxt {
@@ -800,7 +799,7 @@ input {
     color: #efefef;
 }
 
-.contact1-form {
+.contact-form {
     max-width: 800px;
     width: 100%;
 }
