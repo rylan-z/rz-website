@@ -852,7 +852,7 @@ input {
 
 .mobile-nav-link {
     width: 100%;
-    padding: 9px 30px;
+    padding: 2vh 5vw;
     border-bottom: 1px solid var(--dark-grey);
 }
 
@@ -973,6 +973,7 @@ input {
         width: 6vw;
         margin-right: 2vw;
         margin-bottom: 0;
+        height: 85%;
     }
 }
 
