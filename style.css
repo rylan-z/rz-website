@@ -852,7 +852,7 @@ input {
 
 .mobile-nav-link {
     width: 100%;
-    padding: 2vh 5vw;
+    padding: 1.5vh 6vw;
     border-bottom: 1px solid var(--dark-grey);
     z-index: 5000;
 }
@@ -890,7 +890,7 @@ input {
     }
 
     .hero-subtxt {
-        font-size: 4vw;
+        font-size: 4.3vw;
         margin-bottom: 4vh;
         margin-top: 2vh;
         text-align: left;
@@ -957,8 +957,8 @@ input {
     }
 
     .switch-txt-dark {
-        font-size: 5vw;
         color: var(--white);
+        font-size: 3.5vw;
     }
 
     .switch-icn {
@@ -1160,7 +1160,7 @@ input {
 
 .mobile-nav-link-txt {
     color: var(--white);
-    font-size: 5vw;
+    font-size: 3.5vw;
     font-weight: 500;
 }
 
