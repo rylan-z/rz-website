@@ -1,7 +1,6 @@
 :root {
     --white: #efefef;
     --grey: #bbb;
-    --dark-grey: #353535;
     --rounding: 6px;
     --dark-black: #141414;
     --black: #0c0c0c;
@@ -617,7 +616,7 @@ h3 {
 
 .contact-h {
     font-size: 5.3em;
-    max-width: 1000px;
+    max-width: 1140px;
     margin-bottom: 50px;
     font-weight: 300;
 }
@@ -1223,7 +1222,7 @@ input {
     .form-input {
         width: 100%;
         max-width: none;
-        font-size: 5.0vw;
+        font-size: 4.5vw;
     }
 
     .checkmark {
