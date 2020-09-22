@@ -80,7 +80,7 @@
 @media (min-width:1059px) {
     @keyframes l-hero {
         0% {
-            background-position: 50% -20%;
+            background-position: 50% -15%;
         }
 
         100% {
