@@ -1130,7 +1130,7 @@ input {
     }
 
     .footer-email {
-        font-size: 6vw;
+        font-size: 5vw;
     }
 
     .footer-email-hold {
@@ -1176,17 +1176,5 @@ input {
 
     .footer-column-grid {
         grid-template-columns: 1fr;
-    }
-
-    .footer {
-        padding-top: var(--mobile-pad);
-        min-height: 0;
-        padding-bottom: var(--mobile-pad);
-    }
-
-    .switch-txt {
-        font-size: 5vw;
-        font-weight: 500;
-        color: var(--white);
     }
 }

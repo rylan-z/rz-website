@@ -146,9 +146,4 @@
     .landing-hero {
         background-size: 200%;
     }
-
-    .footer {
-        background-size: 100%;
-        background-attachment: scroll;
-    }
 }

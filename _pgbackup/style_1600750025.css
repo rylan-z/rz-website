@@ -1186,7 +1186,5 @@ input {
 
     .switch-txt {
         font-size: 5vw;
-        font-weight: 500;
-        color: var(--white);
     }
 }

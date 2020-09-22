@@ -1180,13 +1180,6 @@ input {
 
     .footer {
         padding-top: var(--mobile-pad);
-        min-height: 0;
-        padding-bottom: var(--mobile-pad);
-    }
-
-    .switch-txt {
-        font-size: 5vw;
-        font-weight: 500;
-        color: var(--white);
+        min-height: none;
     }
 }

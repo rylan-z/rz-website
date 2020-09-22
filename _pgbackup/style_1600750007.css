@@ -1183,10 +1183,4 @@ input {
         min-height: 0;
         padding-bottom: var(--mobile-pad);
     }
-
-    .switch-txt {
-        font-size: 5vw;
-        font-weight: 500;
-        color: var(--white);
-    }
 }
