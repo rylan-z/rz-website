@@ -1232,12 +1232,4 @@ input {
     .validate-input {
         margin-top: var(--mobile-pad);
     }
-
-    .form-textarea {
-        margin-top: var(--mobile-pad);
-    }
-
-    .button-contact {
-        margin-top: var(--mobile-pad);
-    }
 }

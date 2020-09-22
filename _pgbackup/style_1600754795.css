@@ -1209,7 +1209,6 @@ input {
 @media (max-width:749px) {
     .contact-h {
         font-size: 9vw;
-        margin-bottom: var(--mobile-pad);
     }
 
     .form-input {
@@ -1224,20 +1223,8 @@ input {
 
     .container {
         font-size: 3.0vw;
-        padding: 1vh 2vw;
+        padding: 1vh 3vw;
         margin-bottom: 1vh;
         margin-right: 1vw;
-    }
-
-    .validate-input {
-        margin-top: var(--mobile-pad);
-    }
-
-    .form-textarea {
-        margin-top: var(--mobile-pad);
-    }
-
-    .button-contact {
-        margin-top: var(--mobile-pad);
     }
 }
