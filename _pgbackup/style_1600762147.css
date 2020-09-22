@@ -572,6 +572,7 @@ h3 {
     display: flex;
     align-items: flex-end;
     position: relative;
+    margin-top: 0 !important;
 }
 
 .strat-discovery-txt {
@@ -870,7 +871,6 @@ input {
 @media (max-width: 749px) {
     .logo-icon {
         height: 34px;
-        margin-right: 4vw;
     }
 }
 
@@ -1007,20 +1007,18 @@ input {
     }
 
     .strategy-steps-hold {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .strategy-steps-inner-hold {
         width: 100%;
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-        padding: 2vh 2vw;
-        border: 1px solid var(--dark-grey);
-        border-radius: var(--rounding);
+        margin-top: 0;
+        padding-bottom: 0 !important;
+        margin-bottom: 3vh;
     }
 
     .progress-line {
-        height: 20vh;
+        height: 25vh;
     }
 
     .strategy-steps-p {
@@ -1068,13 +1066,14 @@ input {
     }
 
     .service-card {
-        padding: 2vh 2vw;
+        padding: 5vh 3vw;
     }
 
     .strat-steps-icn {
         height: auto;
         width: 11vw;
         margin-bottom: 1vh;
+        margin-top: 5vh;
     }
 }
 
@@ -1098,8 +1097,8 @@ input {
     .client-logo-grid-hold {
         margin-top: 5vh;
         margin-bottom: 5vh;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
     }
 
     .clients-logo-grid {
@@ -1193,17 +1192,12 @@ input {
 @media (max-width:1059px) {
     .clients-logo-grid {
         grid-template-columns: 1fr;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
-        border: 1px solid var(--dark-grey);
-        border-radius: var(--rounding);
     }
 }
 
 @media (max-width:749px) {
     .strat-discovery-txt {
         padding: 2vh 2vw;
-        margin-bottom: 1vh;
     }
 }
 
@@ -1284,51 +1278,4 @@ input {
     .mobile-hide {
         display: none;
     }
-}
-
-.discovery-chat-txt-hold-btm {
-    margin-top: 55px;
-}
-
-@media (max-width:749px) {
-    .strat-steps-inner-hold-left {
-        border: 0;
-        padding: 0 !important;
-    }
-
-    .discovery-chat-txt-hold {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .strat-discovery-txt-name {
-        position: static;
-    }
-}
-
-.discovery-chat-person-hold {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-@media (max-width:749px) {
-    .discovery-user-img {
-        margin-left: 0;
-        margin-bottom: 0;
-        width: 10vw;
-        height: 10vw;
-        min-width: 10vw;
-        min-height: 10vw;
-        margin-right: 2vw;
-    }
-
-    .discovery-chat-txt-hold-btm {
-        margin-top: 2vh;
-    }
-}
-
-.progress-line-conclusion-mobile {
-    background-image: linear-gradient(0deg, rgb(52, 93, 226) 35%, var(--black) 100%);
 }

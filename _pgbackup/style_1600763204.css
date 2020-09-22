@@ -1098,8 +1098,8 @@ input {
     .client-logo-grid-hold {
         margin-top: 5vh;
         margin-bottom: 5vh;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
     }
 
     .clients-logo-grid {
@@ -1193,10 +1193,6 @@ input {
 @media (max-width:1059px) {
     .clients-logo-grid {
         grid-template-columns: 1fr;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
-        border: 1px solid var(--dark-grey);
-        border-radius: var(--rounding);
     }
 }
 
@@ -1330,5 +1326,5 @@ input {
 }
 
 .progress-line-conclusion-mobile {
-    background-image: linear-gradient(0deg, rgb(52, 93, 226) 35%, var(--black) 100%);
+    background-image: linear-gradient(0deg, rgb(52, 93, 226) 35%, var(--dark-grey) 100%);
 }

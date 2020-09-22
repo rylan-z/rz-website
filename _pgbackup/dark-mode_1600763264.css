@@ -152,9 +152,3 @@
         background-attachment: scroll;
     }
 }
-
-@media (max-width:749px) {
-    .client-logo-grid-hold {
-        border: 0;
-    }
-}

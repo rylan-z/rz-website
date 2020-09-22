@@ -1330,5 +1330,5 @@ input {
 }
 
 .progress-line-conclusion-mobile {
-    background-image: linear-gradient(0deg, rgb(52, 93, 226) 35%, var(--black) 100%);
+    background-image: linear-gradient(0deg, rgb(52, 93, 226) 35%, var(--dark-grey) 100%);
 }
