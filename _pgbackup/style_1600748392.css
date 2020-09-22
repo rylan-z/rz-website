@@ -11,7 +11,7 @@
     --gr4: #f61253;
     --gr5: #214ddb;
     --gr6: #0bc9ff;
-    --mobile-pad: 5vh;
+    --mobile-pad: 10vh;
 }
 
 * {
@@ -284,6 +284,7 @@ h3 {
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
+    display: inline;
 }
 
 .service-card-item {
@@ -572,7 +573,6 @@ h3 {
     display: flex;
     align-items: flex-end;
     position: relative;
-    margin-top: 0 !important;
 }
 
 .strat-discovery-txt {
@@ -851,6 +851,9 @@ input {
 }
 
 .mobile-nav-link {
+    color: var(--white);
+    font-size: 1.2em;
+    font-weight: 500;
     width: 100%;
     padding: 9px 30px;
     border-bottom: 1px solid var(--dark-grey);
@@ -965,14 +968,13 @@ input {
     }
 
     .switch-txt-dark {
-        font-size: 5vw;
-        color: var(--white);
+        font-size: 1.3em;
     }
 
     .switch-icn {
-        width: 6vw;
-        margin-right: 2vw;
-        margin-bottom: 0;
+        width: 16px;
+        margin-right: 0;
+        margin-bottom: 3px;
     }
 }
 
@@ -1003,7 +1005,7 @@ input {
 
     .service-icon {
         height: auto;
-        width: 15vw;
+        width: 23vw;
     }
 
     .steps-subh {
@@ -1011,10 +1013,9 @@ input {
     }
 
     .strategy-steps-h {
-        font-size: 9vw;
+        font-size: 2.2em;
         text-align: center;
-        line-height: 1.4;
-        margin-bottom: 1vh;
+        line-height: 1.6em;
     }
 
     .strategy-steps-hold {
@@ -1024,12 +1025,21 @@ input {
     .strategy-steps-inner-hold {
         width: 100%;
         margin-top: 0;
-        padding-bottom: 0 !important;
-        margin-bottom: 3vh;
+        padding-bottom: 5vh;
     }
 
     .progress-line {
         height: 25vh;
+    }
+
+    .custom-control-label {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .custom-control {
+        display: none;
     }
 
     .strategy-steps-p {
@@ -1082,9 +1092,7 @@ input {
 
     .strat-steps-icn {
         height: auto;
-        width: 15vw;
-        margin-bottom: 1vh;
-        margin-top: 5vh;
+        width: 35vw;
     }
 }
 
@@ -1103,74 +1111,5 @@ input {
 
     .circle-label-h {
         font-size: 7vw;
-    }
-
-    .client-logo-grid-hold {
-        margin-top: 3vh;
-        margin-bottom: 3vh;
-    }
-
-    .clients-logo-grid {
-        grid-gap: 6vh;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .testimonial-h {
-        font-size: 5vw;
-        padding: 2vh 3vw;
-    }
-
-    .footer-cta {
-        font-size: 11vw;
-    }
-
-    .footer-logo-icn {
-        display: none;
-    }
-
-    .footer-email {
-        font-size: 5vw;
-    }
-
-    .footer-email-hold {
-        margin-top: var(--mobile-pad);
-    }
-}
-
-.testimonial-name-hold {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-@media (max-width:749px) {
-    .testimonial-name-hold {
-        align-items: center;
-    }
-
-    .testimonial-name {
-        font-size: 7vw;
-    }
-}
-
-.custom-control-mobile {
-}
-
-@media (max-width:749px) {
-}
-
-@media (max-width:1059px) {
-}
-
-.mobile-nav-link-txt {
-    color: var(--white);
-    font-size: 5vw;
-    font-weight: 500;
-}
-
-@media (max-width:749px) {
-    .custom-control-label {
-        justify-content: flex-start;
     }
 }

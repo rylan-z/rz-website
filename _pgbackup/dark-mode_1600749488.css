@@ -77,15 +77,13 @@
     animation: l-hero 1.6s ease;
 }
 
-@media (min-width:1059px) {
-    @keyframes l-hero {
-        0% {
-            background-position: 50% -20%;
-        }
+@keyframes l-hero {
+    0% {
+        background-position: 50% -20%;
+    }
 
-        100% {
-            background-position: 50% -10%;
-        }
+    100% {
+        background-position: 50% -10%;
     }
 }
 
@@ -140,10 +138,4 @@
 .switch-icn-light {
     display: inline;
     margin-bottom: 0;
-}
-
-@media (max-width:1059px) {
-    .landing-hero {
-        background-size: 200%;
-    }
 }

@@ -851,6 +851,9 @@ input {
 }
 
 .mobile-nav-link {
+    color: var(--white);
+    font-size: 1.2em;
+    font-weight: 500;
     width: 100%;
     padding: 9px 30px;
     border-bottom: 1px solid var(--dark-grey);
@@ -965,14 +968,13 @@ input {
     }
 
     .switch-txt-dark {
-        font-size: 5vw;
-        color: var(--white);
+        font-size: 1.3em;
     }
 
     .switch-icn {
-        width: 6vw;
-        margin-right: 2vw;
-        margin-bottom: 0;
+        width: 16px;
+        margin-right: 0;
+        margin-bottom: 3px;
     }
 }
 
@@ -1030,6 +1032,16 @@ input {
 
     .progress-line {
         height: 25vh;
+    }
+
+    .custom-control-label {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .custom-control {
+        display: none;
     }
 
     .strategy-steps-p {
@@ -1151,26 +1163,5 @@ input {
 
     .testimonial-name {
         font-size: 7vw;
-    }
-}
-
-.custom-control-mobile {
-}
-
-@media (max-width:749px) {
-}
-
-@media (max-width:1059px) {
-}
-
-.mobile-nav-link-txt {
-    color: var(--white);
-    font-size: 5vw;
-    font-weight: 500;
-}
-
-@media (max-width:749px) {
-    .custom-control-label {
-        justify-content: flex-start;
     }
 }
