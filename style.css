@@ -1111,6 +1111,7 @@ input {
     .testimonial-h {
         font-size: 4vw;
         padding: 2vh 3vw;
+        margin-bottom: 1vh;
     }
 
     .footer-cta {
@@ -1336,5 +1337,12 @@ input {
 @media (min-width:750px) {
     .progress-line-conclusion-mobile {
         display: none;
+    }
+}
+
+@media (max-width:749px) {
+    .testimonial-mugshot {
+        width: 20vw;
+        height: 20vw;
     }
 }
