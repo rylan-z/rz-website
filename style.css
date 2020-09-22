@@ -1215,15 +1215,15 @@ input {
     .form-input {
         width: 100%;
         max-width: none;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
 
     .checkmark {
-        font-size: 3.0vw;
+        font-size: 4.0vw;
     }
 
     .container {
-        font-size: 3.0vw;
+        font-size: 4.0vw;
         padding: 1vh 2vw;
         margin-bottom: 1vh;
         margin-right: 1vw;
@@ -1239,5 +1239,9 @@ input {
 
     .button-contact {
         margin-top: var(--mobile-pad);
+    }
+
+    .contact1-form {
+        max-width: none;
     }
 }
