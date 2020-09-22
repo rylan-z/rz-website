@@ -918,8 +918,7 @@ input {
 @media (max-width: 749px) {
     .m {
         max-width: none;
-        padding-bottom: var(--mobile-pad);
-        padding-top: var(--mobile-pad);
+        padding: var(--mobile-pad) 3vw;
     }
 }
 
