@@ -25,12 +25,12 @@
 		<div class="nav">
 			<div class="m m-nav">
 				<div class="mobile-nav-dropdown">
-					<div class="mobile-nav-btn mobile-nav-dropdown">
+					<div class="mobile-nav-btn">
 						<img src="assets/logo-r.svg" class="logo-icon"/>
 						<p class="mobile-nav-menu-txt">Menu</p>
 					</div>
 					<div class="dropdown-mobile-nav">
-						<a href="" cms-menu="primary" cms-menu-register cms-menu-register-description="Mobile nav" class="mobile-nav-link"><div class="custom-control-mobile">
+						<a href="" class="mobile-nav-link"><div class="custom-control-mobile">
 								<input type="checkbox" class="custom-control-input" id="darkSwitch">
 								<label class="custom-control-label" for="darkSwitch"> 
 									<img src="assets/switch-dark.svg" class="switch-icn">
@@ -38,10 +38,10 @@
 									<p class="switch-txt"><span class="switch-txt-dark">Dark</span></p>
 								</label>
 							</div></a>
-						<a href="" cms-menu="primary" cms-menu-register cms-menu-register-description="Mobile nav" class="mobile-nav-link"><p class="mobile-nav-link-txt">Homepage</p></a>
-						<a href="" cms-menu="primary" cms-menu-register cms-menu-register-description="Mobile nav" class="mobile-nav-link"><p class="mobile-nav-link-txt">About</p></a>
-						<a href="" cms-menu="primary" cms-menu-register cms-menu-register-description="Mobile nav" class="mobile-nav-link"><p class="mobile-nav-link-txt">Work</p></a>
-						<a href="" cms-menu="primary" cms-menu-register cms-menu-register-description="Mobile nav" class="mobile-nav-link"><p class="mobile-nav-link-txt">Services</p></a>
+						<a href="./" class="mobile-nav-link"><p class="mobile-nav-link-txt">Homepage</p></a>
+						<a href="/about" class="mobile-nav-link"><p class="mobile-nav-link-txt">About</p></a>
+						<a href="/work" class="mobile-nav-link"><p class="mobile-nav-link-txt">Work</p></a>
+						<a href="/services" class="mobile-nav-link" style="border-width: 0;"><p class="mobile-nav-link-txt">Services</p></a>
 					</div>
 				</div>
 				<a href="./" class="logo-hold"><img src="assets/logo-r.svg" class="logo-icon"/><h1 class="logo-text">Rylan Ziesing</h1></a>
@@ -54,7 +54,7 @@
 					<a href="contact" class="button button-nav">Let&apos;s Chat</a>
 					<div class="custom-control">
 						<input type="checkbox" class="custom-control-input" id="darkSwitch">
-						<label class="custom-control custom-control-label" for="darkSwitch"> 
+						<label class="custom-control-label" for="darkSwitch"> 
 							<img src="assets/switch-dark.svg" class="switch-icn">
 							<img src="assets/switch-light.svg" class="switch-icn switch-icn-light">
 							<p class="switch-txt"><span class="switch-txt-dark">Dark</span></p>
@@ -67,7 +67,7 @@
 			<div class="landing-hero-gradient"></div>
 			<div class="m m-hero">
 				<h1 class="hero-title">Website development, design &amp; branding</h1>
-				<p class="hero-subtxt">From entrepreneurial ventures to established businesses, I provide a wide variety of tailor-made digital solutions worldwide.</p>
+				<p class="hero-subtxt">From entrepreneurial ventures to established businesses, I provide a wide variety of tailor-made digital solutions to businesses worldwide.</p>
 				<div class="hori">
 					<a href="contact" class="button">What&apos;s Your Project?</a>
 					<a href="" class="btn-hollow button">Explore My Work</a>
@@ -81,7 +81,7 @@
 					<p class="stats-p"><b>Years of industry experience</b> working extensively in a wide variety of digital mediums</p>
 				</div>
 				<div class="stats-hold">
-					<h1 class="stats-h">55</h1>
+					<h1 class="stats-h">45</h1>
 					<p class="stats-p"><b>Successful projects</b> including websites &amp; brands for 75-100+ employee companies</p>
 				</div>
 				<div class="stats-hold">
@@ -132,18 +132,22 @@
 			<h2 style="background-image: linear-gradient(105deg, var(--gr3) 0%, var(--gr4) 100%);" class="steps-title">Strategy</h2>
 			<h1 class="steps-h">I obsess over creating the best solutions possible.</h1>
 			<p class="steps-subh">From small one-off projects to full time multi month endeavors, I&apos;m with my clients every step of the journey &mdash; no matter the time required or overall complexity.</p>
-			<div class="progress-line" style="background-image: linear-gradient(0deg, var(--dark-grey) 50%, var(--black) 100%);"></div>
+			<div class="mobile-hide progress-line"></div>
 			<div class="strategy-steps-hold">
 				<div class="strat-steps-inner-hold-left strategy-steps-inner-hold">
 					<div class="discovery-chat-txt-hold">
 						<p class="strat-discovery-txt">I&apos;m creating an e-commerce site for my new business. We will need to start from scratch. Requirements are branding, web design, development &amp; hosting. Can you help?</p>
-						<p class="strat-discovery-txt-name">Client</p>
-						<img src="assets/c-mug-michael-c.jpg" class="discovery-user-img">
+						<div class="discovery-chat-person-hold">
+							<img src="assets/c-mug-michael-c.jpg" class="discovery-user-img">
+							<p class="strat-discovery-txt-name">Client</p>
+						</div>
 					</div>
-					<div class="discovery-chat-txt-hold" style="margin-top: 55px;">
-						<p class="strat-discovery-txt-name">Rylan Ziesing</p>
+					<div class="discovery-chat-txt-hold discovery-chat-txt-hold-btm">
 						<p class="strat-discovery-txt">Absolutely! Can you tell me more about your business? Once I have a clear understanding of your vision &amp; the project specifcations, I&apos;ll develop an action plan we all agree on &amp; get right to work.</p>
-						<img src="assets/c-mug-michael-c.jpg" class="discovery-user-img">
+						<div class="discovery-chat-person-hold">
+							<img src="assets/c-mug-michael-c.jpg" class="discovery-user-img">
+							<p class="strat-discovery-txt-name">Rylan</p>
+						</div>
 					</div>
 				</div>
 				<div class="strat-line-hold">
@@ -190,6 +194,7 @@
 					<p class="strategy-steps-p">We now have a shared, agreed upon vision &amp; direction moving forward. With this in mind, effective changes are made, rapidly propelling us towards your finished product.</p>
 				</div>
 			</div>
+			<div class="progress-line progress-line-conclusion-mobile"></div>
 			<div class="circle-label" style="background-image: linear-gradient(105deg, var(--gr5) 0%, var(--gr6) 100%);">
 				<h2 class="circle-label-h">3</h2>
 			</div>
