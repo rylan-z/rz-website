@@ -794,6 +794,7 @@ input {
 }
 
 .switch-txt-dark {
+    font-weight: 500;
 }
 
 .loading {
@@ -1243,5 +1244,28 @@ input {
 
     .contact1-form {
         max-width: none;
+    }
+}
+
+@media (min-width:750px) {
+    .fold-padding {
+        display: none;
+    }
+}
+
+@media (min-width:750px) and (max-width:1059px) {
+    .mobile-nav-link-txt {
+        font-size: 1.3em;
+    }
+
+    .switch-txt {
+        font-size: 1.3em;
+        color: var(--white);
+    }
+}
+
+@media (max-width:1059px) {
+    .custom-control-label {
+        justify-content: flex-start;
     }
 }
