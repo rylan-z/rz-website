@@ -90,13 +90,12 @@ p {
     background-image: url('assets/hero-dk-c.jpg');
     align-items: center;
     justify-content: center;
-    padding-top: 0 !important;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     max-width: none;
-    padding-bottom: 0 !important;
+    padding: 0 !important;
 }
 
 .preload-hold {
@@ -862,7 +861,7 @@ input {
 
 .mobile-nav-link {
     color: var(--white);
-    font-size: 0.9em;
+    font-size: 1.2em;
     font-weight: 500;
     width: 100%;
     padding: 9px 30px;
@@ -898,24 +897,25 @@ input {
 
 .mobile-nav-menu-txt {
     color: var(--white);
-    font-size: 1.1em;
+    font-size: 1.0em;
 }
 
 @media (max-width:1059px) {
     .hero-title {
-        font-size: 2.6em;
         text-align: left;
+        font-size: 12vw;
+        display: inline;
     }
 
     .hero-subtxt {
-        font-size: 1.3em;
+        font-size: 5vw;
         margin-bottom: 30px;
         margin-top: 20px;
         text-align: left;
     }
 }
 
-@media (max-width:539px) {
+@media (max-width: 699px) {
     .hori {
         flex-direction: column;
         width: 100%;
@@ -923,7 +923,8 @@ input {
 
     .button {
         width: 100%;
-        font-size: 1.2em;
+        font-size: 6vw;
+        display: inline;
     }
 }
 
@@ -935,7 +936,7 @@ input {
     }
 }
 
-@media (max-width:539px) {
+@media (max-width: 699px) {
     .btn-hollow {
         margin-left: 0;
         margin-top: 10px;
@@ -944,11 +945,12 @@ input {
 
 @media (max-width:1059px) {
     p {
-        font-size: 1.5em;
+        font-size: 4vw;
+        display: inline;
     }
 
     .stats-p {
-        font-size: 1.2em;
+        font-size: 5vw;
         text-align: center;
     }
 
@@ -958,7 +960,7 @@ input {
     }
 
     .strategy-h {
-        font-size: 1.5em;
+        font-size: 5vw;
     }
 
     .steps-title {
@@ -970,7 +972,7 @@ input {
     }
 
     .button-nav {
-        font-size: 1.2em;
+        font-size: 3vw;
     }
 
     .switch-txt-dark {

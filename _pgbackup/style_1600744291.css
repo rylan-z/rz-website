@@ -11,6 +11,7 @@
     --gr4: #f61253;
     --gr5: #214ddb;
     --gr6: #0bc9ff;
+    --mobile-pad: 10vh;
 }
 
 * {
@@ -56,8 +57,8 @@ body {
 .m-nav {
     justify-content: space-between;
     flex-direction: row;
-    padding-bottom: 0;
-    padding-top: 0;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
     align-items: center;
 }
 
@@ -89,13 +90,13 @@ p {
     background-image: url('assets/hero-dk-c.jpg');
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 0 !important;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     max-width: none;
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
 }
 
 .preload-hold {
@@ -388,6 +389,7 @@ h3 {
     letter-spacing: 0.1em;
     font-size: 0.8em;
     font-weight: 600;
+    text-align: center;
 }
 
 .logo-icon {
@@ -429,7 +431,7 @@ h3 {
     font-size: 1.2em;
 }
 
-.vert {
+.strat-line-hold {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -833,13 +835,14 @@ input {
 }
 
 .dropdown-mobile-nav {
-    display: flex;
+    display: none;
     background-color: var(--black);
     flex-direction: column;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--dark-grey);
     border-radius: var(--rounding);
     position: fixed;
     top: 60px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width:1059px) {
@@ -862,7 +865,7 @@ input {
     font-size: 0.9em;
     font-weight: 500;
     width: 100%;
-    padding: 7px 30px;
+    padding: 9px 30px;
     border-bottom: 1px solid var(--dark-grey);
 }
 
@@ -884,7 +887,7 @@ input {
 
 @media (max-width:1059px) {
     .logo-icon {
-        height: 32px;
+        height: 34px;
     }
 }
 
@@ -896,4 +899,166 @@ input {
 .mobile-nav-menu-txt {
     color: var(--white);
     font-size: 1.1em;
+}
+
+@media (max-width:1059px) {
+    .hero-title {
+        font-size: 2.6em;
+        text-align: left;
+    }
+
+    .hero-subtxt {
+        font-size: 1.3em;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        text-align: left;
+    }
+}
+
+@media (max-width:539px) {
+    .hori {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:1059px) {
+    .m {
+        max-width: none;
+        padding-bottom: var(--mobile-pad);
+        padding-top: var(--mobile-pad);
+    }
+}
+
+@media (max-width:539px) {
+    .btn-hollow {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:1059px) {
+    p {
+        font-size: 1.5em;
+    }
+
+    .stats-p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        grid-gap: var(--mobile-pad);
+    }
+
+    .strategy-h {
+        font-size: 1.5em;
+    }
+
+    .steps-title {
+        font-size: 3em;
+    }
+
+    .steps-h {
+        font-size: 2.8em;
+    }
+
+    .button-nav {
+        font-size: 1.2em;
+    }
+
+    .switch-txt-dark {
+        font-size: 1.3em;
+    }
+
+    .switch-icn {
+        width: 16px;
+        margin-right: 0;
+        margin-bottom: 3px;
+    }
+}
+
+.m-hero {
+    z-index: 2;
+    align-items: center;
+    padding-top: 170px;
+}
+
+@media (max-width:1059px) {
+    .m-hero {
+        align-items: flex-start;
+        padding-top: 105px;
+    }
+
+    .services-cards-grid {
+        grid-template-columns: 1fr;
+        grid-gap: var(--mobile-pad);
+    }
+
+    .service-card-item {
+        font-size: 1.5em;
+    }
+
+    .service-card-h {
+        font-size: 2.5em;
+    }
+
+    .service-icon {
+        height: 10vh;
+    }
+
+    .steps-subh {
+        font-size: 1.6em;
+    }
+
+    .strategy-steps-h {
+        font-size: 2.2em;
+        text-align: center;
+        line-height: 1.6em;
+    }
+
+    .strategy-steps-hold {
+        flex-direction: column;
+    }
+
+    .strategy-steps-inner-hold {
+        width: 100%;
+        margin-top: 0;
+        padding-bottom: var(--mobile-pad);
+    }
+
+    .progress-line {
+        height: 25vh;
+    }
+
+    .custom-control-label {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .custom-control {
+        display: none;
+    }
+
+    .strategy-steps-p {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .strat-line-hold {
+        display: none;
+    }
+
+    .stats-hold {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
