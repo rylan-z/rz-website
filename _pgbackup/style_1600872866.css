@@ -11,7 +11,7 @@
     --gr4: #f61253;
     --gr5: #214ddb;
     --gr6: #0bc9ff;
-    --mobile-pad: 8vh;
+    --mobile-pad: 5vh;
 }
 
 * {
@@ -1088,8 +1088,8 @@ input {
     }
 
     .client-logo-grid-hold {
-        margin-top: var(--mobile-pad);
-        margin-bottom: var(--mobile-pad);
+        margin-top: 5vh;
+        margin-bottom: 5vh;
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -1107,7 +1107,7 @@ input {
     }
 
     .footer-cta {
-        font-size: 12vw;
+        font-size: 10vw;
     }
 
     .footer-logo-icn {
@@ -1187,9 +1187,11 @@ input {
 @media (max-width:1059px) {
     .clients-logo-grid {
         grid-template-columns: 1fr;
-        padding-top: 0;
-        padding-bottom: 0;
-        grid-gap: 7vh;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        border: 1px solid var(--dark-grey);
+        border-radius: var(--rounding);
+        grid-gap: 10vh;
     }
 }
 

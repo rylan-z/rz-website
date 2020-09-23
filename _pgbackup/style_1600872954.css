@@ -11,7 +11,7 @@
     --gr4: #f61253;
     --gr5: #214ddb;
     --gr6: #0bc9ff;
-    --mobile-pad: 8vh;
+    --mobile-pad: 5vh;
 }
 
 * {
@@ -1189,7 +1189,7 @@ input {
         grid-template-columns: 1fr;
         padding-top: 0;
         padding-bottom: 0;
-        grid-gap: 7vh;
+        grid-gap: 10vh;
     }
 }
 
