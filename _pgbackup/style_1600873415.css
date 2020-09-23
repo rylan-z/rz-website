@@ -11,8 +11,7 @@
     --gr4: #f61253;
     --gr5: #214ddb;
     --gr6: #0bc9ff;
-    --mobile-pad: 15vh;
-    --mobile-pad-less: 2.5vh;
+    --mobile-pad: 8vh;
 }
 
 * {
@@ -766,6 +765,10 @@ input {
 }
 
 .client-logo-grid-hold {
+    max-width: non;
+}
+
+.client-logo-grid-hold {
     max-width: none;
     padding-bottom: 0;
     padding-top: 0;
@@ -963,14 +966,12 @@ input {
 @media (max-width: 749px) {
     .m-hero {
         align-items: flex-start;
-        padding-top: var(--mobile-pad);
-        padding-bottom: var(--mobile-pad);
+        padding-top: 105px;
     }
 
     .services-cards-grid {
         grid-template-columns: 1fr;
-        grid-gap: var(--mobile-pad-less);
-        margin-bottom: var(--mobile-pad-less);
+        grid-gap: var(--mobile-pad);
     }
 
     .service-card-item {
@@ -1003,15 +1004,15 @@ input {
 
     .strategy-steps-inner-hold {
         width: 100%;
-        margin-top: var(--mobile-pad-less);
-        margin-bottom: var(--mobile-pad-less);
-        padding: 4vh 3vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        padding: 2vh 2vw;
         border: 1px solid var(--dark-grey);
         border-radius: var(--rounding);
     }
 
     .progress-line {
-        height: 35vh;
+        height: 20vh;
     }
 
     .strategy-steps-p {
@@ -1059,7 +1060,7 @@ input {
     }
 
     .service-card {
-        padding: 4vh 3vw;
+        padding: 2vh 2vw;
     }
 
     .strat-steps-icn {
@@ -1071,7 +1072,7 @@ input {
 
 @media (max-width:1059px) {
     .stats-grid {
-        grid-gap: 10vh;
+        grid-gap: 9vw;
     }
 }
 
@@ -1101,7 +1102,7 @@ input {
 
     .testimonial-h {
         font-size: 4vw;
-        padding: 4vh 3vw;
+        padding: 2vh 3vw;
         margin-bottom: 1vh;
     }
 
@@ -1188,8 +1189,7 @@ input {
         grid-template-columns: 1fr;
         padding-top: 0;
         padding-bottom: 0;
-        grid-gap: 50px;
-        display: none;
+        grid-gap: 7vh;
     }
 }
 
@@ -1318,13 +1318,12 @@ input {
     }
 
     .discovery-chat-txt-hold-btm {
-        margin-top: var(--mobile-pad-less);
+        margin-top: 2vh;
     }
 }
 
 .progress-line-conclusion-mobile {
     background-image: linear-gradient(0deg, rgb(52, 93, 226) 35%, var(--black) 100%);
-    margin-top: var(--mobile-pad-less);
 }
 
 @media (min-width:750px) {
@@ -1369,30 +1368,5 @@ input {
 
     .footer-bio {
         text-align: center;
-        font-size: 5.5vw;
-    }
-
-    .landing-hero {
-        padding-top: 65px !important;
-    }
-
-    .client-logo-hold {
-        min-height: 20vh;
-        border-bottom: 1px solid var(--dark-grey);
-        border-right: 1px solid var(--dark-grey);
-    }
-}
-
-.client-logo-grid-mobile {
-    display: none;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-@media (max-width:749px) {
-    .client-logo-grid-mobile {
-        display: grid;
-        grid-gap: 0;
-        grid-template-columns: 1fr 1fr;
     }
 }

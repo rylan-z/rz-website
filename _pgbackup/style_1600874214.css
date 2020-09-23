@@ -1374,13 +1374,12 @@ input {
 
     .landing-hero {
         padding-top: 65px !important;
-    }
-
-    .client-logo-hold {
-        min-height: 20vh;
-        border-bottom: 1px solid var(--dark-grey);
-        border-right: 1px solid var(--dark-grey);
-    }
+    }.client-logo-hold {
+    min-height: 20vh;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom: 1px solid #000000;
+}
 }
 
 .client-logo-grid-mobile {
@@ -1395,4 +1394,8 @@ input {
         grid-gap: 0;
         grid-template-columns: 1fr 1fr;
     }
+}
+
+.client-logo-hold-mobile-right {
+    border-right: 0;
 }

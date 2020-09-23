@@ -766,6 +766,10 @@ input {
 }
 
 .client-logo-grid-hold {
+    max-width: non;
+}
+
+.client-logo-grid-hold {
     max-width: none;
     padding-bottom: 0;
     padding-top: 0;
@@ -1185,11 +1189,10 @@ input {
 
 @media (max-width:1059px) {
     .clients-logo-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         padding-top: 0;
         padding-bottom: 0;
-        grid-gap: 50px;
-        display: none;
+        grid-gap: 0;
     }
 }
 
@@ -1378,21 +1381,5 @@ input {
 
     .client-logo-hold {
         min-height: 20vh;
-        border-bottom: 1px solid var(--dark-grey);
-        border-right: 1px solid var(--dark-grey);
-    }
-}
-
-.client-logo-grid-mobile {
-    display: none;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-@media (max-width:749px) {
-    .client-logo-grid-mobile {
-        display: grid;
-        grid-gap: 0;
-        grid-template-columns: 1fr 1fr;
     }
 }
