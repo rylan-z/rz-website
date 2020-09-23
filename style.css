@@ -1,6 +1,7 @@
 :root {
     --white: #efefef;
     --grey: #bbb;
+    --dark-grey: #444;
     --rounding: 6px;
     --dark-black: #141414;
     --black: #0c0c0c;
@@ -823,9 +824,6 @@ input {
     right: 0;
 }
 
-@media (max-width: 749px) {
-}
-
 .dropdown-mobile-nav {
     display: none;
     background-color: var(--black);
@@ -835,9 +833,6 @@ input {
     position: fixed;
     top: 60px;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-@media (min-width: 749px) {
 }
 
 @media (max-width:949px) {
@@ -1197,6 +1192,7 @@ input {
         padding-bottom: 3vh;
         border: 1px solid var(--dark-grey);
         border-radius: var(--rounding);
+        grid-gap: 10vh;
     }
 }
 
