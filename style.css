@@ -879,9 +879,7 @@ input {
 
 @media (max-width: 749px) {
     .hero-title {
-        text-align: left;
-        font-size: 9vw;
-        line-height: 1.3;
+        display: none;
     }
 
     .hero-subtxt {
@@ -1339,5 +1337,23 @@ input {
     .testimonial-mugshot {
         width: 20vw;
         height: 20vw;
+    }
+}
+
+.hero-title-mobile {
+    display: none;
+}
+
+@media (min-width:750px) {
+    .hero-title-mobile {
+    }
+}
+
+@media (max-width:749px) {
+    .hero-title-mobile {
+        display: inline;
+        text-align: left;
+        font-size: 9.5vw;
+        line-height: 1.3;
     }
 }
