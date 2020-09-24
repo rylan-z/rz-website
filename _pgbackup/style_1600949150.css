@@ -1415,23 +1415,11 @@ input {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0) 50%, rgb(0, 99, 255) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    animation: preload-circle 1.3s linear infinite;
+    background-image: -webkit-repeating-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgb(0, 99, 255) 100%);
 }
 
 .preload-circle-cover {
     border-radius: 100%;
-    width: 80%;
-    height: 80%;
-    background-color: #0f132e;
-}
-
-@keyframes preload-circle {
-    100% {
-        transform: rotate(360deg);
-    }
+    width: 90%;
+    height: 90%;
 }
