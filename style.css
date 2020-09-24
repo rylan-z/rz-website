@@ -1112,7 +1112,7 @@ input {
     }
 
     .footer-email-hold {
-        margin-top: var(--mobile-pad);
+        margin-top: 7vh;
     }
 }
 
@@ -1154,7 +1154,7 @@ input {
 
     .footer-column-grid {
         grid-template-columns: 1fr;
-        margin-top: var(--mobile-pad);
+        margin-top: 7vh;
     }
 
     .footer {
@@ -1354,6 +1354,7 @@ input {
         padding-top: 20vh;
         padding-bottom: 20vh;
         align-items: center;
+        width: 80%;
     }
 
     .footer-hori {
@@ -1362,7 +1363,7 @@ input {
 
     .footer-bio {
         text-align: center;
-        font-size: 5.5vw;
+        font-size: 4.5vw;
     }
 
     .landing-hero {
