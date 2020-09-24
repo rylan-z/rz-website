@@ -1420,7 +1420,7 @@ input {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    animation: preload-circle 1.3s linear infinite;
+    animation: preload-circle 0.7s linear infinite;
 }
 
 .preload-circle-cover {
