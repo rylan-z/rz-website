@@ -1425,9 +1425,9 @@ input {
 
 .preload-circle-cover {
     border-radius: 100%;
-    width: 80%;
-    height: 80%;
-    background-color: #0f132e;
+    width: 75%;
+    height: 75%;
+    background-color: #061029;
 }
 
 @keyframes preload-circle {
