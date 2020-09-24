@@ -896,6 +896,8 @@ input {
     .button {
         width: 100%;
         font-size: 3.5vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
     }
 }
 
@@ -944,6 +946,8 @@ input {
     }
 
     .button-nav {
+        padding-bottom: 7px;
+        padding-top: 7px;
     }
 
     .switch-icn {
