@@ -947,7 +947,7 @@ input {
 
     .button-nav {
         padding-bottom: 7px;
-        padding-top: 7px;
+        padding-top: 10px;
     }
 
     .switch-icn {
@@ -1009,7 +1009,7 @@ input {
         width: 100%;
         margin-top: var(--mobile-pad-less);
         margin-bottom: var(--mobile-pad-less);
-        padding: 4vh 3vw;
+        padding: 3.5vh 3vw;
         border: 1px solid var(--dark-grey);
         border-radius: var(--rounding);
     }
@@ -1091,16 +1091,16 @@ input {
     }
 
     .client-logo-grid-hold {
-        margin-top: var(--mobile-pad);
-        margin-bottom: var(--mobile-pad);
+        margin-top: 0;
+        margin-bottom: 0;
         padding-top: 0;
         padding-bottom: 0;
     }
 
     .testimonial-h {
         font-size: 4vw;
-        padding: 4vh 3vw;
-        margin-bottom: 1vh;
+        padding: 3.5vh 3vw;
+        margin-bottom: 2vh;
     }
 
     .footer-cta {
@@ -1394,6 +1394,8 @@ input {
         grid-template-columns: 1fr 1fr;
         padding-bottom: 0;
         padding-top: 0;
+        margin-top: var(--mobile-pad-less);
+        margin-bottom: var(--mobile-pad-less);
     }
 }
 
