@@ -1442,7 +1442,7 @@ input {
     position: relative;
     text-indent: -9999em;
     border: 3px solid hsla(0,0%,100%,.3);
-    border-left: 3px solid #fff;
+    border-left: 3px solid #efefef;
     -webkit-transform: scale(.01) translateZ(0);
     transform: scale(.01) translateZ(0);
     border-radius: 50%;
@@ -1604,4 +1604,8 @@ input {
         margin-top: 7vh;
         text-align: center;
     }
+}
+
+.button-contact:hover .pageclip-form__submit:after {
+    border-left: 3px solid #efefef;
 }
