@@ -1605,7 +1605,3 @@ input {
         text-align: center;
     }
 }
-
-.button-contact:hover .pageclip-form__submit:after {
-    border-left: 3px solid #efefef;
-}
