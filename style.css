@@ -798,6 +798,7 @@ input {
 
 .loading {
     color: #efefef;
+    line-height: 0.9;
 }
 
 .pageclip-form {
@@ -1400,22 +1401,9 @@ input {
 }
 
 .preload-circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0) 50%, rgb(0, 99, 255) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    animation: preload-circle 0.7s linear infinite;
-}
-
-.preload-circle-cover {
-    border-radius: 100%;
-    width: 75%;
-    height: 75%;
-    background-color: #061029;
+    animation: preload-circle 0.5s linear infinite;
+    width: 35px;
+    margin-bottom: 15px;
 }
 
 @keyframes preload-circle {
