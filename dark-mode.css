@@ -110,9 +110,6 @@
 }
 
 .client-logo-grid-hold {
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    border-color: var(--dark-grey);
 }
 
 .strat-discovery-txt {
@@ -157,4 +154,8 @@
     .client-logo-grid-hold {
         border: 0;
     }
+}
+
+.clients-logo-grid {
+    opacity: 0.5;
 }
