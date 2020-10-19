@@ -1680,7 +1680,6 @@ input {
     font-size: 1.7em;
     text-align: left;
     color: var(--white);
-    margin-bottom: 5px;
 }
 
 .about-p {
@@ -1728,5 +1727,5 @@ li {
 
 .about-li {
     color: var(--white);
-    margin-top: 16px;
+    margin-top: 5px;
 }
