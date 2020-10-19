@@ -1680,7 +1680,7 @@ input {
     font-size: 1.7em;
     text-align: left;
     color: var(--white);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .about-p {
@@ -1706,11 +1706,6 @@ input {
     .hero-title {
         font-size: 7em;
     }
-}
-
-.about-p-h {
-    color: var(--white);
-    font-weight: 600;
 }
 
 .anchor {
