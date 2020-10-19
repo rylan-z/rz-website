@@ -42,7 +42,7 @@ body {
     display: flex;
     justify-content: center;
     top: 0;
-    backdrop-filter: saturate(200%) blur(7px);
+    backdrop-filter: saturate(250%) blur(6px);
     z-index: 10;
     -ms-overflow-style: none;
 
@@ -158,7 +158,7 @@ h1 {
 }
 
 .button {
-    padding: 11px 30px;
+    padding: 13px 35px;
     color: var(--black);
     background-color: var(--white);
     font-weight: 600;
