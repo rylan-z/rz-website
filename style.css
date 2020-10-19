@@ -1707,3 +1707,8 @@ input {
         font-size: 7em;
     }
 }
+
+.about-p-h {
+    color: var(--white);
+    font-weight: 600;
+}
