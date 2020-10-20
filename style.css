@@ -436,7 +436,7 @@ h3 {
 }
 
 .strategy-steps-inner-hold {
-    width: 45%;
+    width: 44%;
 }
 
 .strategy-circle {
@@ -586,19 +586,12 @@ h3 {
     margin-top: -80px;
 }
 
-.discovery-user-img {
-    margin-left: 12px;
-    width: 45px;
-    min-width: 45px;
-    max-width: 45px;
-    border-radius: 100%;
-}
-
 .discovery-chat-txt-hold {
     width: 100%;
     display: flex;
     align-items: flex-end;
     position: relative;
+    flex-direction: column;
 }
 
 .strat-discovery-txt {
@@ -613,10 +606,8 @@ h3 {
     font-weight: 300;
     line-height: 1em;
     float: right;
-    position: absolute;
-    right: 59px;
     font-size: 0.8em;
-    bottom: -2em;
+    margin-top: 10px;
 }
 
 .strat-steps-icn {
@@ -1310,8 +1301,9 @@ input {
     }
 
     .strat-discovery-txt-name {
-        position: static;
         font-size: 4.3vw;
+        margin-top: 2vh;
+        margin-bottom: var(--mobile-pad-less);
     }
 }
 
