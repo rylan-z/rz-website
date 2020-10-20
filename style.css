@@ -587,12 +587,11 @@ h3 {
 }
 
 .discovery-user-img {
-    width: 45px;
-    height: 45px;
-    border-radius: 100%;
-    min-width: 45px;
-    min-height: 45px;
     margin-left: 12px;
+    width: 45px;
+    min-width: 45px;
+    max-width: 45px;
+    border-radius: 100%;
 }
 
 .discovery-chat-txt-hold {
