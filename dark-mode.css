@@ -159,3 +159,10 @@
 .clients-logo-grid {
     opacity: 0.5;
 }
+
+.light-hidden {
+	display: none;
+}
+.dark-hidden {
+	display: flex;
+}

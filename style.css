@@ -603,7 +603,7 @@ h3 {
 }
 
 .strat-discovery-txt-name {
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1em;
     float: right;
     font-size: 0.8em;
@@ -1741,4 +1741,12 @@ li {
 
 .strat-discovery-txt-rylan {
     background-color: #22cc52;
+}
+
+.dark-hidden {
+    display: none;
+}
+
+.light-hidden {
+    display: flex;
 }
