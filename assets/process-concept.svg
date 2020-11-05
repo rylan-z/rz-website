@@ -9,11 +9,11 @@
 	.st3{fill:#2E2D32;stroke:#BBBBBB;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st4{fill:#49A9FF;stroke:#95CCEF;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st5{fill:#BBBBBB;}
-	.st6{font-family:'Arial-BoldMT';}
+	.st6{font-family:Sans,Arial;}
 	.st7{font-size:5px;}
 	.st8{fill:none;stroke:#BBBBBB;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st9{font-size:6px;}
-	.st10{font-family:'ArialMT';}
+	.st10{font-family:Sans,Arial;}
 	.st11{font-size:4px;}
 	.st12{font-size:3px;}
 	.st13{fill:#212226;}

@@ -8,11 +8,11 @@
 	.st2{fill:#0086FF;stroke:#777;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st3{fill:#49A9FF;stroke:#95CCEF;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st4{fill:#777;}
-	.st5{font-family:'Arial-BoldMT';}
+	.st5{font-family:Sans,Arial;}
 	.st6{font-size:5px;}
 	.st7{fill:none;stroke:#777;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st8{font-size:6px;}
-	.st9{font-family:'ArialMT';}
+	.st9{font-family:Sans,Arial;}
 	.st10{font-size:4px;}
 	.st11{font-size:3px;}
 	.st12{fill:none;}
