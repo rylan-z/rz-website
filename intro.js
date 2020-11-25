@@ -1,1 +1,2 @@
-document.getElementsByClassName("removeclass")[0].innerHTML = localStorage.removeItem('removeclass');
+setTimeout(function(){ document.getElementsByClassName("removeclass")[0].innerHTML = localStorage.removeItem('removeclass');
+   }, 200);
