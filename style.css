@@ -112,11 +112,11 @@ p {
     height: 100%;
     position: fixed;
     background-color: rgba(2, 4, 23, 0.85);
-    justify-content: center;
-    align-items: center;
     backdrop-filter: saturate(250%) blur(30px);
     z-index: 100;
     display: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .preload-video {
