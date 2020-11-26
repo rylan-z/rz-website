@@ -16,6 +16,7 @@
 		<link rel="preload" href="dark-mode.css" as="style">
 		<link rel="prefetch" href="contact">
 		<link rel="preload" href="assets/earth.svg">
+		<script type="text/javascript" src="preload-disable.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
@@ -25,7 +26,7 @@
 				<img src="assets/circle-rotate.svg" class="preload-circle"/>
 				<h2 class="loading">loading...</h2>
 			</div>
-		</div>
+		</div>		 
 		<div class="nav">
 			<div class="m m-nav">
 				<div class="mobile-nav-dropdown">
@@ -304,21 +305,5 @@
 			</div>
 		</div>
 		<script type="text/javascript" src="pgia/lib/pgia.js"></script>
-		<script>
-//While page is loading check if there is a session variable set for isNotFirstVisit - will be null if this is the first visit
-let isNotFirstVisit = sessionStorage.getItem("isNotFirstVisit");
-//check if isNotFirstVisit = null (or false)
-if(!isNotFirstVisit) {
-    //if this is the first visit, let the animation play and set the variable to "true"
-    sessionStorage.setItem("isNotFirstVisit", true);
-} else {
-    //if this is not the first visit then find the pre-loader - this assumes that the first item with the class name "preload-hold" is the one you want hidden
-    let loader = document.getElementsByClassName("preload-hold")[0];
-    //set the visibility to hidden
-    loader.style.visibility = "hidden";
-    //set the display to none
-    loader.style.display ="none";
-}
-</script>
 	</body>
 </html>
