@@ -17,7 +17,6 @@
 		<link rel="prefetch" href="contact">
 		<link rel="preload" href="assets/earth.svg">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script type="text/javascript" src="intro.js"></script>
 	</head>
 	<body>
 		<div class="preload-hold" data-pg-ia='{"l":[{"trg":"load","t":".preload-video","rpt":"0","a":{"n":"","l":[{"t":"","l":[{"t":"set","p":0.1,"d":0,"l":{"display":"inline"}},{"t":"set","p":0.1,"d":0,"l":{"media.play":"0s"}}]},{"t":"$.preload-hold","l":[{"t":"tween","p":0,"d":0.3,"l":{"backgroundColor":"#020417"}},{"t":"tween","p":3.2,"d":0.2,"l":{"opacity":0}},{"t":"set","p":3.35,"d":0,"l":{"display":"none"}},{"t":"set","p":3.4,"d":0,"l":{"class.add":"removeclass"}}]},{"t":"$.preload-loading-hold","l":[{"t":"tween","p":0,"d":0.3,"l":{"opacity":0}}]}]}}]}'>
@@ -305,5 +304,21 @@
 			</div>
 		</div>
 		<script type="text/javascript" src="pgia/lib/pgia.js"></script>
+		<script>
+//While page is loading check if there is a session variable set for isNotFirstVisit - will be null if this is the first visit
+let isNotFirstVisit = sessionStorage.getItem("isNotFirstVisit");
+//check if isNotFirstVisit = null (or false)
+if(!isNotFirstVisit) {
+    //if this is the first visit, let the animation play and set the variable to "true"
+    sessionStorage.setItem("isNotFirstVisit", true);
+} else {
+    //if this is not the first visit then find the pre-loader - this assumes that the first item with the class name "preload-hold" is the one you want hidden
+    let loader = document.getElementsByClassName("preload-hold")[0];
+    //set the visibility to hidden
+    loader.style.visibility = "hidden";
+    //set the display to none
+    loader.style.display ="none";
+}
+</script>
 	</body>
 </html>
