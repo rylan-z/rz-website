@@ -1750,3 +1750,7 @@ li {
 .light-hidden {
     display: flex;
 }
+
+.special {
+    display: none;
+}
